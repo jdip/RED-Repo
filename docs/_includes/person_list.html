@@ -1,0 +1,11 @@
+<ul>
+    {% for person in site.people %}
+        {% for org in person.organizations %}
+            {% if org.name == include.organization %}
+            <li>
+                {{ org.position }}: <a href="{{ person.url | relative_url }}"> {{ person.name }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</ul>

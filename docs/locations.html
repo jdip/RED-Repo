@@ -1,0 +1,21 @@
+---
+layout: default
+title: locations
+permalink: /locations/
+---
+
+<img src="{{ '/assets/img/Constance-City.jpg' | relative_url }}" width="100%">
+
+<h1>Locations</h1>
+<ul>
+    {% assign regions = site.locations | where: "type", "region" %}
+    {% for region in regions %}
+    <li>
+        <h2>
+            <a href="{{ region.url | relative_url }}"> {{ region.name }}</a>
+        </h2>
+        {% assign list_types = "area|municipality|poi|poi|poi" | split: "|" %}
+        {% include location_list.html level=0 types=list_types name=region.name %}
+    </li>
+    {% endfor %}
+</ul>

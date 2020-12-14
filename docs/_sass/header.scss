@@ -1,0 +1,34 @@
+@import "colors";
+@import "typography";
+
+body {
+  > header {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 128px;
+    padding: 32px;
+    background-color: $shade-50;
+    background-image: linear-gradient(135deg, $shade-50, $shade-100);
+    h1 {
+      margin-bottom: -8px;
+    }
+    nav {
+      color: $shade-900;
+      a {
+        color: $complementary-900;
+        &:visited {
+          color: $complementary-900;
+        }
+        &:hover {
+          color: $complementary-700;
+        }
+        &:active {
+          color: $complementary-500;
+        }
+      }
+    }
+  }
+}

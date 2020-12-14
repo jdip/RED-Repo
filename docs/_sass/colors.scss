@@ -1,0 +1,69 @@
+@import "color-vars";
+
+$color-codes: 900,800,700,600,500,400,300,200,100,50;
+
+
+@mixin create-color($name,$default) {
+  .#{$name}-color {
+    color: $default;
+  }
+  .#{$name}-visited:visited {
+    color: $default;
+  }
+
+  a.#{$name}-hover:hover  {
+    color: $default;
+  }
+
+  a.#{$name}-active:active {
+    color: $default !important;
+  }
+
+  .#{$name}-background {
+    background-color: $default;
+  }
+  .#{$name}-fill {
+    fill: $default;
+  }
+  .#{$name}-border {
+    border: $default;
+  }
+  .#{$name}-border-top {
+    border-top-color: $default;
+  }
+  .#{$name}-border-bottom {
+    border-bottom-color: $default;
+  }
+  .#{$name}-border-left {
+    border-left-color: $default;
+  }
+  .#{$name}-border-right {
+    border-right-color: $default;
+  }
+}
+
+@mixin create-colors($name,$color-list) {
+  @for $i from 1 through 10 {
+    @include create-color(#{$name}-#{nth($color-codes,$i)},nth($color-list,$i));
+  }
+}
+
+@include create-color('primary',$primary-900);
+@include create-color('complimentary',$complementary-500);
+@include create-color('analogous1',$analogous1-600);
+@include create-color('analogous2',$analogous2-800);
+@include create-color('triadic1',$triadic1-500);
+@include create-color('triadic2',$triadic2-900);
+@include create-color('black',$shade-900);
+@include create-color('grey',$shade-500);
+@include create-color('white',$shade-50);
+
+@include create-colors('primary',$primary-colors);
+@include create-colors('complimentary',$complementary-colors);
+@include create-colors('analogous1',$analogous1-colors);
+@include create-colors('analogous2',$analogous2-colors);
+@include create-colors('triadic1',$triadic1-colors);
+@include create-colors('triadic2',$triadic2-colors);
+@include create-colors('shade',$shade-colors);
+
+

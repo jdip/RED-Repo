@@ -1,0 +1,81 @@
+@import "colors";
+@import "typography";
+
+body {
+  > footer {
+    z-index: 2;
+    padding: 64px 32px 64px 32px;
+    background-color: $shade-500;
+    background-image: linear-gradient(135deg, $shade-500, $shade-600);
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    a {
+      color: $shade-900;
+      font-weight: bolder;
+
+      &:visited {
+        color: $shade-900;
+      }
+
+      &:hover {
+        color: $shade-200;
+      }
+
+      &:active {
+        color: $shade-50;
+      }
+    }
+
+    div.links {
+      ul.contact {
+        margin-bottom: 16px;
+
+        li {
+          a {
+            display: inline-block;
+            line-height: 28px;
+          }
+
+        }
+      }
+
+      ul.github {
+        padding: 0;
+
+        li {
+          display: inline-block;
+          margin: 0 2px 0 2px;
+          &:first-of-type {
+            margin-left: 0;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  div.blurb {
+    max-width: 480px;
+    justify-self: right;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  body {
+    > footer {
+      grid-template-columns: 100%;
+      div.links {
+        justify-self: center;
+        margin-bottom: 32px;
+      }
+      div.blurb {
+        justify-self: center;
+      }
+    }
+  }
+}

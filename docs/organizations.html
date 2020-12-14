@@ -1,0 +1,43 @@
+---
+layout: default
+title: Organizations
+permalink: /organizations/
+---
+
+
+<h1>Organizations</h1>
+<ul>
+    <li>
+        <h2>Corps</h2>
+        <ul>
+            {% assign corps = site.organizations | where: "type", "corp" %}
+            {% for corp in corps %}
+            <li>
+                <a href="{{ corp.url | relative_url }}"> {{ corp.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+    <li>
+        <h2>Gangs</h2>
+        <ul>
+            {% assign gangs = site.organizations | where: "type", "gang" %}
+            {% for gang in gangs %}
+            <li>
+                <a href="{{ gang.url | relative_url }}"> {{ gang.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+    <li>
+        <h2>Crews</h2>
+        <ul>
+            {% assign crews = site.organizations | where: "type", "crew" %}
+            {% for crew in crews %}
+            <li>
+                <a href="{{ crew.url | relative_url }}"> {{ crew.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>

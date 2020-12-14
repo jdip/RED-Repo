@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article>
+    <img src="{{ page.logo_url | relative_url }}" alt="{{ page.name }} logo" width="200">
+    <h1>{{ page.name }}</h1>
+    {{ content }}
+    <h4>Notable People</h4>
+    {% include person_list.html organization=page.name %}
+</article>

@@ -1,0 +1,106 @@
+$color-codes: 900,800,700,600,500,400,300,200,100,50;
+
+$primary-900: #d50000;
+$primary-800: #ed220d;
+$primary-700: #fb2c13;
+$primary-600: #ff3519;
+$primary-500: #ff3c1e;
+$primary-400: #ff6140;
+$primary-300: #ff8162;
+$primary-200: #ffa68f;
+$primary-100: #ffcabb;
+$primary-50: #fee8e7;
+
+$primary-colors: $primary-900,$primary-800,$primary-700,$primary-600,$primary-500,$primary-400,$primary-300,$primary-200,$primary-100,$primary-50;
+
+$complementary-900: #00645c;
+$complementary-800: #008887;
+$complementary-700: #009c9f;
+$complementary-600: #00b2b8;
+$complementary-500: #00c2ca;
+$complementary-400: #00cccf;
+$complementary-300: #00d5d5;
+$complementary-200: #6fe2df;
+$complementary-100: #abedea;
+$complementary-50: #ddf8f7;
+
+$complementary-colors: $complementary-900,$complementary-800,$complementary-700,$complementary-600,$complementary-500,$complementary-400,$complementary-300,$complementary-200,$complementary-100,$complementary-50;
+
+$analogous1-900: #840256;
+$analogous1-800: #a90260;
+$analogous1-700: #bf0264;
+$analogous1-600: #d5006b;
+$analogous1-500: #e6006e;
+$analogous1-400: #e83885;
+$analogous1-300: #eb5e9c;
+$analogous1-200: #f08db8;
+$analogous1-100: #f5bad4;
+$analogous1-50: #fbe4ee;
+
+$analogous1-colors: $analogous1-900,$analogous1-800,$analogous1-700,$analogous1-600,$analogous1-500,$analogous1-400,$analogous1-300,$analogous1-200,$analogous1-100,$analogous1-50;
+
+$analogous2-900: #cb5300;
+$analogous2-800: #d56b00;
+$analogous2-700: #db7903;
+$analogous2-600: #e18807;
+$analogous2-500: #e5930b;
+$analogous2-400: #e8a229;
+$analogous2-300: #ebb24e;
+$analogous2-200: #f0c880;
+$analogous2-100: #f6ddb2;
+$analogous2-50: #fbf2e0;
+
+$analogous2-colors: $analogous2-900,$analogous2-800,$analogous2-700,$analogous2-600,$analogous2-500,$analogous2-400,$analogous2-300,$analogous2-200,$analogous2-100,$analogous2-50;
+
+$triadic1-900: #877100;
+$triadic1-800: #a49700;
+$triadic1-700: #b6ae00;
+$triadic1-600: #c7c300;
+$triadic1-500: #d5d500;
+$triadic1-400: #dcdb3e;
+$triadic1-300: #e3e264;
+$triadic1-200: #ecea91;
+$triadic1-100: #f4f2bc;
+$triadic1-50: #fbfae4;
+
+$triadic1-colors: $triadic1-900,$triadic1-800,$triadic1-700,$triadic1-600,$triadic1-500,$triadic1-400,$triadic1-300,$triadic1-200,$triadic1-100,$triadic1-50;
+
+$triadic2-900: #007800;
+$triadic2-800: #009b00;
+$triadic2-700: #00af00;
+$triadic2-600: #00c400;
+$triadic2-500: #00d500;
+$triadic2-400: #52dc42;
+$triadic2-300: #7ce36a;
+$triadic2-200: #a6ec98;
+$triadic2-100: #cbf4c1;
+$triadic2-50: #eafbe6;
+
+$triadic2-colors: $triadic2-900,$triadic2-800,$triadic2-700,$triadic2-600,$triadic2-500,$triadic2-400,$triadic2-300,$triadic2-200,$triadic2-100,$triadic2-50;
+
+
+$shade-900: #1a1a1a;
+$shade-800: #333333;
+$shade-700: #4d4d4d;
+$shade-600: #666666;
+$shade-500: #808080;
+$shade-400: #999999;
+$shade-300: #b3b3b3;
+$shade-200: #cccccc;
+$shade-100: #e5e5e5;
+$shade-50: #f2f2f2;
+
+$shade-colors: $shade-900,$shade-800,$shade-700,$shade-600,$shade-500,$shade-400,$shade-300,$shade-200,$shade-100,$shade-50;
+
+$primary: $primary-900;
+$complementary: $complementary-900;
+
+$analogous1: $analogous1-600;
+$analogous2: $analogous2-800;
+
+$triadic1: $triadic1-500;
+$triadic2: $triadic2-900;
+
+$translucent: rgba(0,0,0,0);
+
+

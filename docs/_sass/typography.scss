@@ -1,0 +1,108 @@
+@import "typography-vars";
+@import "color-vars";
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  @include font-size(6);
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'ITC Eras Bold', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $shade-50;
+  +h4, + h5, + h6 {
+    color: $shade-500;
+    font-style: italic;
+    border-top: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+  }
+  + h4 {
+    margin-top: -0.5rem;
+  }
+  + h5 {
+    margin-top: -0.4rem;
+  }
+  + h6 {
+    margin-top: -0.15rem;
+  }
+}
+
+h1 {
+  @include font-size(1);
+}
+
+h2 {
+  @include font-size(2);
+}
+
+h3 {
+  @include font-size(3);
+}
+
+h4 {
+  @include font-size(4);
+}
+
+h5 {
+  @include font-size(5);
+}
+
+h6 {
+  @include font-size(6);
+}
+
+p,code,blockquote {
+  @include font-size(6);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+blockquote {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+small,sup,sub {
+  font-size: 0.75em;
+}
+
+sub {
+  vertical-align: sub;
+  font-weight: lighter;
+}
+
+sup {
+  vertical-align: super;
+  font-weight: lighter;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.small {
+  @include font-size(7);
+}
+
+.tiny {
+  @include font-size(8);
+}

@@ -1,0 +1,27 @@
+$font-sizes: 2rem,1.75rem,1.5rem,1.25rem,1.125rem,1rem,0.875rem,0.75rem;
+
+@function font-height($size_number) {
+  @return nth($font-sizes,$size_number);
+}
+
+@function line-height($size_number) {
+  @return calc(#{nth($font-sizes,$size_number)}*1.5);
+}
+
+@mixin font-size($size_number) {
+  font-size: font-height($size_number);
+  line-height: line-height($size_number);
+}
+
+@mixin font-height($size_number) {
+  font-size: font-height($size_number);
+}
+
+@mixin line-height($size_number) {
+  line-height: line-height($size_number);
+}
+
+@mixin font-condensed($size_number) {
+  letter-spacing: calc(#{nth($font-sizes,$size_number)}/11.2);
+}
+

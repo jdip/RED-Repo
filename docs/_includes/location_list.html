@@ -1,0 +1,12 @@
+<ul>
+    {% assign locations = site.locations | where: "type", include.types[include.level] | where: "location", include.name %}
+    {% for location in locations %}
+    <li>
+        <a href="{{ location.url | relative_url }}"> {{ location.name }}</a>
+        {% assign level = include.level | plus: 1 %}
+        {% if include.types.size > level %}
+            {% include location_list.html level=level types=include.types name=location.name %}
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
