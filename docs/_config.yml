@@ -36,13 +36,13 @@ github_username:  jdip
 
 
 collections:
-  organizations:
+  actions:
     output: true
     permalink: /:collection/:path/
-  locations:
+  skills:
     output: true
     permalink: /:collection/:path/
-  people:
+  items:
     output: true
     permalink: /:collection/:path/
 
@@ -56,21 +56,20 @@ defaults:
     values:
       image: true
   - scope:
-      path: _locations
-      type: locations
+      path: _actions
+      type: actions
     values:
-      layout: location
+      layout: action
   - scope:
-      path: _organizations
-      type: organizations
+      path: _skills
+      type: skills
     values:
-      layout: organization
-
+      layout: skill
   - scope:
-      path: _people
-      type: people
+      path: _items
+      type: item
     values:
-      layout: person
+      layout: item
 
 # Exclude from processing.
 # The following items will not be processed, by default.
