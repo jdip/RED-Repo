@@ -34,6 +34,15 @@ ul {
     padding: 8px;
 
   }
+  &.list {
+    padding-left: 32px;
+    list-style-type: disc;
+    li {
+      list-style-type: disc;
+      list-style-position: outside;
+      display: list-item;
+    }
+  }
 }
 
 ol {
@@ -126,4 +135,7 @@ body {
 }
 .right {
   text-align: right;
+}
+.middle {
+  vertical-align: middle;
 }

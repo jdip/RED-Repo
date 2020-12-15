@@ -1,91 +1,599 @@
+- name: "Canned Goods"
+  group: "Food"
+  price: "10"
+  value: "Cheap"
 
-- name: "Canned Goods",
-  type: "Food",
-  price: "10",
-  value: "Cheap",
+- name: "Packaged goods"
+  group: "Food"
+  price: "10"
+  value: "Cheap"
 
-- name: "Packaged goods",
-  type: "Food",
-  price: "10",
-  value: "Cheap",
+- name: "Frozen Goods"
+  group: "Food"
+  price: "10"
+  value: "Cheap"
 
-- name: "Frozen Goods",
-  type: "Food",
-  price: "10",
-  value: "Cheap",
+- name: "Grain Bag"
+  group: "Food"
+  price: "20"
+  value: "Everyday"
 
-- name: "Bags of Grain",
-  type: "Food",
-  price: "20",
-  value: "Everyday",
+- name: "Kibble Pack"
+  group: "Food"
+  price: "10"
+  value: "Cheap"
 
-- name: "Kibble Pack",
-  type: "Food",
-  price: "10",
-  value: "Cheap",
+- name: "Prepak Bag"
+  group: "Food"
+  price: "20"
+  value: "Everyday"
 
-- name: "Bags of Prepak",
-  type: "Food",
-  price: "20",
-  value: "Everyday",
+- name: "Alcohol"
+  group: "Drug"
+  quality: "Poor"
+  price: "10"
+  value: "Cheap"
 
-- name: "Poor value Alcohol",
-  type: "Food",
-  price: "10",
-  value: "Cheap",
+- name: "Alcohol"
+  group: "Drug"
+  quality: "Average"
+  price: "20"
+  value: "Everyday"
 
-- name: "Alcohol",
-  type: "Drug",
-  price: "20",
-  value: "Everyday",
+- name: "Alcohol"
+  group: "Drug"
+  quality: "Excellent"
+  price: "100"
+  value: "Premium"
 
-- name: "Excellent value Alcohol",
-  type: "Drug",
-  price: "100",
-  value: "Premium",
+- name: "MRE"
+  group: "Food"
+  price: "10"
+  value: "Cheap"
 
-- name: "MRE",
-  type: "Food",
-  price: "10",
-  value: "Cheap",
+- name: "Live Chicken"
+  group: "Food"
+  price: "50"
+  value: "Costly"
 
-- name: "Live Chicken",
-  type: "Food",
-  price: "50",
-  value: "Costly",
+- name: "Live Fish"
+  group: "Food"
+  price: "50"
+  value: "Costly"
 
-- name: "Live Fish",
-  type: "Food",
-  price: "50",
-  value: "Costly",
+- name: "Fruits"
+  group: "Food"
+  quality: "Fresh"
+  price: "50"
+  value: "Costly"
 
-- name: "Fresh Fruits",
-  type: "Food",
-  price: "50",
-  value: "Costly",
+- name: "Vegetables"
+  group: "Food"
+  quality: "Fresh"
+  price: "50"
+  value: "Costly"
 
-- name: "Fresh Vegetables",
-  type: "Food",
-  price: "50",
-  value: "Costly",
+- name: "Vegetables"
+  group: "Food"
+  quality: "Root"
+  price: "20"
+  value: "Everyday"
 
-- name: "Root Vegetables",
-  type: "Food",
-  price: "20",
-  value: "Everyday",
+- name: "Live Pig"
+  group: "Food"
+  price: "100"
+  value: "Premium"
 
-- name: "Live Pig",
-  type: "Food",
-  price: "100",
-  value: "Premium",
+- name: "Fruits"
+  group: "Food"
+  quality: "Exotic"
+  price: "100"
+  value: "Premium"
 
-- name: "Exotic Fruits",
-  type: "Food",
-  price: "100",
-  value: "Premium",
+- name: "Vegetables"
+  group: "Food"
+  quality: "Exotic"
+  price: "100"
+  value: "Premium"
 
-- name: "Exotic Vegetables",
-  type: "Food",
-  price: "100",
-  value: "Premium",
-  
+- name: "Blue Glass"
+  group: "Drug"
+  price: "20"
+  value: "Everyday"
+  page: 357
+
+- name: "Smash"
+  group: "Drug"
+  price: "10"
+  value: "Cheap"
+  page: 357
+
+- name: "Synthcoke"
+  group: "Drug"
+  price: "20"
+  value: "Everyday"
+  page: 358
+
+- name: "Black Lace"
+  group: "Drug"
+  price: "50"
+  value: "Costly"
+  page: 357
+
+- name: "Boost"
+  group: "Drug"
+  price: "50"
+  value: "Costly"
+  page: 357
+
+- name: "Agent"
+  group: "Gear"
+  price: "100"
+  value: "Premium"
+  page: "352"
+
+- name: "Audio Recorder"
+  group: "Gear"
+  price: "100"
+  value: "Premium"
+  page: "352"
+
+- name: "Bug Detector"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "352"
+
+- name: "Chemical Analyzer"
+  group: "Gear"
+  price: "1000"
+  value: "Very Expensive"
+  page: "352"
+
+- name: "Computer"
+  group: "Gear"
+  price: "50"
+  value: "Costly"
+  page: "352"
+
+- name: "Cyberdeck"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "353"
+
+- name: "Disposable Cell Phone"
+  group: "Gear"
+  price: "50"
+  value: "Costly"
+  page: "353"
+
+- name: "Electric Guitar or Other Instrument"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "353"
+
+- name: "Medscanner"
+  group: "Gear"
+  price: "1000"
+  value: "Very Expensive"
+  page: "354"
+
+- name: "Homing Tracer"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "354"
+
+- name: "Radio Communicator"
+  group: "Gear"
+  price: "100"
+  value: "Premium"
+  page: "354"
+
+- name: "Techscanner"
+  group: "Gear"
+  price: "1000"
+  value: "Very Expensive"
+  page: "355"
+
+- name: "Smart Glasses"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "354"
+
+- name: "Radar Detector"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "354"
+
+- name: "Scrambler/Descrambler"
+  group: "Gear"
+  price: "500"
+  value: "Expensive"
+  page: "354"
+
+- name: "Radio Scanner/Music Player"
+  group: "Gear"
+  price: "50"
+  value: "Costly"
+  page: "354"
+
+- name: "Braindance Viewer"
+  group: "Gear"
+  price: "1000"
+  value: "Very Expensive"
+  page: "352"
+
+- name: "Virtuality Goggles"
+  group: "Gear"
+  price: "100"
+  value: "Premium"
+  page: "355"
+
+- name: "Backup Drive"
+  group: "Cyberdeck Hardware"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+- name: "DNA Lock"
+  group: "Cyberdeck Hardware"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+- name: "Hardened Circuitry"
+  group: "Cyberdeck Hardware"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+- name: "Insulated Wiring"
+  group: "Cyberdeck Hardware"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+- name: "KRASH Barrier"
+  group: "Cyberdeck Hardware"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+- name: "Range Upgrade"
+  group: "Cyberdeck Hardware"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+
+- name: "Eraser"
+  group: "Software"
+  type: "Booster"
+  price: "20"
+  value: "Everyday"
+  page: "368"
+
+- name: "See Ya"
+  group: "Software"
+  type: "Booster"
+  price: "20"
+  value: "Everyday"
+  page: "368"
+
+- name: "Speedy Gonzalvez"
+  group: "Software"
+  type: "Booster"
+  price: "100"
+  value: "Premium"
+  page: "368"
+
+- name: "Worm"
+  group: "Software"
+  type: "Booster"
+  price: "50"
+  value: "Costly"
+  page: "368"
+
+- name: "Armor"
+  group: "Software"
+  type: "Defender"
+  price: "50"
+  value: "Costly"
+  page: "369"
+
+- name: "Flak"
+  group: "Software"
+  type: "Defender"
+  price: "50"
+  value: "Costly"
+  page: "369"
+
+- name: "Shield"
+  group: "Software"
+  type: "Defender"
+  price: "20"
+  value: "Everyday"
+  page: "369"
+
+- name: "Banhammer"
+  group: "Software"
+  type: "Attacker"
+  price: "50"
+  value: "Costly"
+  page: "369"
+
+- name: "Sword"
+  group: "Software"
+  type: "Attacker"
+  price: "50"
+  value: "Costly"
+  page: "369"
+
+- name: "DeckKRASH"
+  group: "Software"
+  type: "Attacker"
+  price: "100"
+  value: "Premium"
+  page: "369"
+
+- name: "Hellbolt"
+  group: "Software"
+  type: "Attacker"
+  price: "100"
+  value: "Premium"
+  page: "369"
+
+- name: "Nervescrub"
+  group: "Software"
+  type: "Attacker"
+  price: "100"
+  value: "Premium"
+  page: "369"
+
+- name: "Poison Flatline"
+  group: "Software"
+  type: "Attacker"
+  price: "100"
+  value: "Premium"
+  page: "370"
+
+- name: "Superglue"
+  group: "Software"
+  type: "Attacker"
+  price: "100"
+  value: "Premium"
+  page: "370"
+
+- name: "Vrizzbolt"
+  group: "Software"
+  type: "Attacker"
+  price: "50"
+  value: "Costly"
+  page: "370"
+
+- name: "Asp"
+  group: "Software"
+  type: "Black ICE"
+  price: "100"
+  value: "Premium"
+  page: "370"
+
+- name: "Raven"
+  group: "Software"
+  type: "Black ICE"
+  price: "50"
+  value: "Costly"
+  page: "371"
+
+- name: "Scorpion"
+  group: "Software"
+  type: "Black ICE"
+  price: "100"
+  value: "Premium"
+  page: "371"
+
+- name: "Wisp"
+  group: "Software"
+  type: "Black ICE"
+  price: "50"
+  value: "Costly"
+  page: "371"
+
+- name: "Hellhound"
+  group: "Software"
+  type: "Black ICE"
+  price: "500"
+  value: "Expensive"
+  page: "370"
+
+- name: "Liche"
+  group: "Software"
+  type: "Black ICE"
+  price: "500"
+  value: "Expensive"
+  page: "371"
+
+- name: "Skunk"
+  group: "Software"
+  type: "Black ICE"
+  price: "500"
+  value: "Expensive"
+  page: "371"
+
+- name: "Killer"
+  group: "Software"
+  type: "Black ICE"
+  price: "500"
+  value: "Expensive"
+  page: "371"
+
+- name: "Medium Pistol"
+  group: "Ranged Weapon"
+  price: "50"
+  value: "Costly"
+
+- name: "Heavy Pistol"
+  group: "Ranged Weapon"
+  price: "100"
+  value: "Premium"
+
+- name: "Very Heavy Pistol"
+  group: "Ranged Weapon"
+  price: "100"
+  value: "Premium"
+
+- name: "SMG"
+  group: "Ranged Weapon"
+  price: "100"
+  value: "Premium"
+
+- name: "Heavy SMG"
+  group: "Ranged Weapon"
+  price: "100"
+  value: "Premium"
+
+- name: "Shotgun"
+  group: "Ranged Weapon"
+  price: "500"
+  value: "Expensive"
+
+- name: "Assault Rifle"
+  group: "Ranged Weapon"
+  price: "500"
+  value: "Expensive"
+
+- name: "Sniper Rifle"
+  group: "Ranged Weapon"
+  price: "500"
+  value: "Expensive"
+
+- name: "Bow"
+  group: "Ranged Weapon"
+  price: "100"
+  value: "Premium"
+
+- name: "Crossbow"
+  group: "Ranged Weapon"
+  price: "100"
+  value: "Premium"
+
+- name: "Grenade Launcher"
+  group: "Ranged Weapon"
+  price: "500"
+  value: "Expensive"
+
+- name: "Rocket Launcher"
+  group: "Ranged Weapon"
+  price: "500"
+  value: "Expensive"
+
+- name: "Knife"
+  group: "Melee Weapon"
+  type: "Light"
+  price: "50"
+  value: "Costly"
+  page: 340
+
+- name: "Tomahawk"
+  group: "Melee Weapon"
+  type: "Light"
+  price: "50"
+  value: "Costly"
+  page: 340
+
+- name: "Baseball Bat"
+  group: "Melee Weapon"
+  type: "Medium"
+  price: "50"
+  value: "Costly"
+  page: 340
+
+- name: "Crowbar"
+  group: "Melee Weapon"
+  type: "Medium"
+  price: "50"
+  value: "Costly"
+  page: 340
+
+- name: "Machete"
+  group: "Melee Weapon"
+  type: "Medium"
+  price: "50"
+  value: "Costly"
+  page: 340
+
+- name: "Sword"
+  group: "Melee Weapon"
+  type: "Heavy"
+  price: "100"
+  value: "Premium"
+  page: 340
+
+- name: "Lead Pipe"
+  group: "Melee Weapon"
+  type: "Heavy"
+  quality: "Poor"
+  price: "20"
+  value: "Everyday"
+  page: 340
+
+- name: "Spiked Bat"
+  group: "Melee Weapon"
+  type: "Heavy"
+  price: "100"
+  value: "Premium"
+  page: 340
+
+- name: "Chainsaw"
+  group: "Melee Weapon"
+  type: "Very Heavy"
+  price: "500"
+  value: "Expensive"
+  page: 340
+
+- name: "Sledgehammer"
+  group: "Melee Weapon"
+  type: "Very Heavy"
+  quality: "Poor"
+  price: "50"
+  value: "Costy"
+  page: 340
+
+- name: "Naginata"
+  group: "Melee Weapon"
+  type: "Very Heavy"
+  price: "500"
+  value: "Expensive"
+  page: 340
+
+
+- name: "Cybereye"
+  group: "Cyberware"
+  price: "100"
+  value: "Premium"
+
+- name: "Cyberaudio Suite"
+  group: "Cyberware"
+  price: "500"
+  value: "Expensive"
+
+- name: "Neural Link"
+  group: "Cyberware"
+  price: "500"
+  value: "Expensive"
+
+- name: "Cyberarm"
+  group: "Cyberware"
+  price: "500"
+  value: "Expensive"
+
+- name: "Cyberleg"
+  group: "Cyberware"
+  price: "100"
+  value: "Premium"
+    
