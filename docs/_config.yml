@@ -23,13 +23,13 @@ host: 0.0.0.0
 port: 4000
 
 
-title: Constance City
+title: RED Repo
 subtitle: Endlessly changing, always the fucking same.
 
 email: jdipaolo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A repository for lore concerning Constance City, a fictional campaign setting for the Cyberpunk RED table top role playing game.
-baseurl: "/Constance-City" # the subpath of your site, e.g. /blog
+baseurl: "/RED-Repo" # the subpath of your site, e.g. /blog
 url: "https://jdip.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: buckeymonkey
 github_username:  jdip
