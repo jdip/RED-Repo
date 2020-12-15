@@ -1,0 +1,91 @@
+
+- name: "Canned Goods",
+  type: "Food",
+  price: "10",
+  value: "Cheap",
+
+- name: "Packaged goods",
+  type: "Food",
+  price: "10",
+  value: "Cheap",
+
+- name: "Frozen Goods",
+  type: "Food",
+  price: "10",
+  value: "Cheap",
+
+- name: "Bags of Grain",
+  type: "Food",
+  price: "20",
+  value: "Everyday",
+
+- name: "Kibble Pack",
+  type: "Food",
+  price: "10",
+  value: "Cheap",
+
+- name: "Bags of Prepak",
+  type: "Food",
+  price: "20",
+  value: "Everyday",
+
+- name: "Poor value Alcohol",
+  type: "Food",
+  price: "10",
+  value: "Cheap",
+
+- name: "Alcohol",
+  type: "Drug",
+  price: "20",
+  value: "Everyday",
+
+- name: "Excellent value Alcohol",
+  type: "Drug",
+  price: "100",
+  value: "Premium",
+
+- name: "MRE",
+  type: "Food",
+  price: "10",
+  value: "Cheap",
+
+- name: "Live Chicken",
+  type: "Food",
+  price: "50",
+  value: "Costly",
+
+- name: "Live Fish",
+  type: "Food",
+  price: "50",
+  value: "Costly",
+
+- name: "Fresh Fruits",
+  type: "Food",
+  price: "50",
+  value: "Costly",
+
+- name: "Fresh Vegetables",
+  type: "Food",
+  price: "50",
+  value: "Costly",
+
+- name: "Root Vegetables",
+  type: "Food",
+  price: "20",
+  value: "Everyday",
+
+- name: "Live Pig",
+  type: "Food",
+  price: "100",
+  value: "Premium",
+
+- name: "Exotic Fruits",
+  type: "Food",
+  price: "100",
+  value: "Premium",
+
+- name: "Exotic Vegetables",
+  type: "Food",
+  price: "100",
+  value: "Premium",
+  

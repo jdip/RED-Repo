@@ -67,7 +67,7 @@ defaults:
       layout: skill
   - scope:
       path: _items
-      type: item
+      type: items
     values:
       layout: item
 

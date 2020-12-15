@@ -5,13 +5,27 @@ permalink: /items/
 ---
 
 <h1>Items</h1>
-<ul>
-    {% assign items = site.items %}
-    {% for item in items %}
-    <li>
-        <h2>
-            <a href="{{ item.url | relative_url }}"> {{ item.name }}</a>
-        </h2>
-    </li>
-    {% endfor %}
-</ul>
+<table class="rowshades">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% assign items = site.data.items | sort: "type" %}
+        {% assign previous = "" %}
+        {% for item in items %}
+        {% if previous == "" or previous.grouping != item.type  %}
+        <tr class="grouping"><td colspan="3"><strong>{{ item.type }}</strong></td></tr>
+        {% endif %}
+        <tr>
+            <td><a href="{{ item.url | relative_url }}"> {{ item.name }}</a></td>
+            <td>{{ item.price }}eb</td>
+            <td>{{ item.cost }}</td>
+        </tr>
+        {% assign previous = item %}
+        {% endfor %}
+    </tbody>
+</table>

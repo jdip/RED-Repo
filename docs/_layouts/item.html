@@ -2,17 +2,8 @@
 layout: default
 ---
 <article>
-    <img src="{{ page.avatar_url | relative_url }}" alt="{{ page.name }} logo" width="200">
-    <h1>{{ page.name }}</h1>
-    <h3>Status: {{ page.status }}</h3>
+    <h2>{{ page.name }}</h2>
+    <h4>Price: {{ page.price }}eb ({{ page.cost }})</h4>
+    <br>
     {{ content }}
-    <h4>Organizations</h4>
-    <ul>
-        {% for org in page.organizations %}
-        <li>
-            {% assign url = org.name | slugify | prepend: "/organizations/" | append: "/" %}
-            {{ org.position }} of <a href="{{ url | relative_url }}"> {{ org.name }}</a>
-        </li>
-        {% endfor %}
-    </ul>
 </article>
