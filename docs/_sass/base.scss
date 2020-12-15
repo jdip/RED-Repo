@@ -35,6 +35,69 @@ ul {
   }
 }
 
+ol {
+  padding-left: 32px;
+  list-style-type: decimal;
+  li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    display: list-item;
+    padding: 8px;
+  }
+}
+
+table {
+  border-spacing: 4px;
+  border-collapse: separate;
+  &.rowshades tbody {
+    tr:nth-child(odd) {
+      background-color: $shade-800;
+    }
+    tr:nth-child(even) {
+      background-color: $shade-800;
+    }
+  }
+  tr {
+    th {
+      color: $shade-900;
+      background-color: $shade-50;
+      padding: 4px;
+      margin: 4px;
+      font-weight: bold;
+      &.left {
+        text-align: left;
+      }
+      &.center {
+        text-align: center;
+      }
+      &.right {
+        text-align: right;
+      }
+    }
+    td {
+      padding: 4px;
+      margin: 4px;
+      &.left {
+        text-align: left;
+      }
+      &.center {
+        text-align: center;
+      }
+      &.right {
+        text-align: right;
+      }
+      &.na {
+        background-color: black;
+        color: $shade-800;
+      }
+    }
+    &.grouping {
+      background-color: $shade-700 !important;
+    }
+  }
+
+}
+
 body {
   background-color: $shade-900;
   background-image: linear-gradient(135deg, $shade-800, $shade-900);
@@ -52,4 +115,14 @@ body {
       margin-right: auto;
     }
   }
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
 }

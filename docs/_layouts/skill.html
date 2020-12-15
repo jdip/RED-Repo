@@ -2,9 +2,17 @@
 layout: default
 ---
 <article>
-    <img src="{{ page.logo_url | relative_url }}" alt="{{ page.name }} logo" width="200">
-    <h1>{{ page.name }}</h1>
+    <h2>Skill: {{ page.name }}</h2>
+    <br>
+    <table>
+        <tr><td class="right"><strong>Group:</strong></td><td>{{ page.grouping }}</td></tr>
+        <tr><td class="right"><strong>Stat:</strong></td><td>{{ page.stat }}</td></tr>
+        {% if page.modifier > 1 %}
+        <tr><td class="right"><strong>Exp:</strong></td><td>x{{ page.modifier }}</td></tr>
+        {% endif %}
+    </table>
+    <br>
+    <br>
+    <p>{{ page.description }}</p>
     {{ content }}
-    <h4>Notable People</h4>
-    {% include person_list.html organization=page.name %}
 </article>

@@ -1,16 +1,17 @@
 ---
 layout: default
-title: People
-permalink: /people/
+title: items
+permalink: /items/
 ---
 
-
-
-<h1>People</h1>
+<h1>Items</h1>
 <ul>
-    {% for person in site.people %}
+    {% assign items = site.items %}
+    {% for item in items %}
     <li>
-        <a href="{{ person.url | relative_url }}"> {{ person.name }}</a>
+        <h2>
+            <a href="{{ item.url | relative_url }}"> {{ item.name }}</a>
+        </h2>
     </li>
     {% endfor %}
 </ul>

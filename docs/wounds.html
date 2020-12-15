@@ -1,0 +1,288 @@
+---
+layout: default
+title: Wounds
+permalink: /wounds/
+---
+
+<h2>Taking Damage</h2>
+<BR>
+<p><strong>Whenever you take damage:</strong></p>
+<ol>
+    <li>Your Attacker rolls the damage for their attack.</li>
+    <li>Subtract your armor's SP in that location (if they didn't target your head using an Aimed Shot, this is always your body location) from the damage.* Subtract any remaining damage from your Hit Points.</li>
+    <li>If you ended up taking any damage, your armor on that location is still ablated, reducing its SP by 1 point, until it is repaired.</li>
+</ol>
+<p><small><em>* Some things that cause damage, like poisons and fire, bypass armor.</em></small></p>
+<BR><BR>
+<h3>Wound States</h3>
+<table class="rowshades">
+    <thead>
+        <tr>
+            <th>State</th>
+            <th width="100">Threshold</th>
+            <th>Wound Effect</th>
+            <th class="center">DV<sup>*</sup></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Light</td>
+            <td>< Full HP</td>
+            <td>None</td>
+            <td class="center">10</td>
+        </tr>
+        <tr>
+            <td>Serious</td>
+            <td>< 1/2 HP<sup>**</sup></td>
+            <td>-2 to all Actions</td>
+            <td class="center">13</td>
+        </tr>
+        <tr>
+            <td>Mortal</td>
+            <td>< 1 HP</td>
+            <td>
+                <p>-4 to all Actions</p>
+                <p>-6 to MOVE (Minimum 1)</p>
+                <p>Must make a Death Save at start of each
+                    one of their Turns.</p>
+                <p>Mortally Wounded Characters suffer a Critical
+                Injury whenever they are damaged by a Melee
+                or Ranged Attack. In addition, their Death Save
+                    Penalty increases by 1.</p>
+            </td>
+            <td class="center">15<sup>***</sup></td>
+        </tr>
+        <tr>
+            <td>Dead</td>
+            <td colspan="3">One failed Death Save results in death, from which there is no return</td>
+        </tr>
+    </tbody>
+</table>
+<p><small><em><sup>*</sup> to stabilize</em></small></p>
+<p><small><em><sup>**</sup> Round Up</em></small></p>
+<p><small><em><sup>***</sup> to heal back to 1 HP, and Unconscious (Gone from the world for 1 minute)</em></small></p>
+<BR><BR>
+<h2>Death Saves</h2>
+
+<p>
+    <strong>At the start of each of your Turns where you are Mortally Wounded, you must make a Death
+        Save</strong>. Roll a d10. If you roll under your BODY, you live, and can take your Turn as usual. <strong>If you roll a 10, you
+    automatically fail your Death Save</strong>. Every time you roll a Death Save, your Death Save Penalty increases,
+    meaning each future Death Save you roll is made with an additional +1, making it progressively harder to stave
+    off death. This Death Save Penalty continues to add up until you are brought back to 1HP by Stabilization,
+</p>
+<h3>If you fail even a single Death Save, you die.</h3>
+<BR><BR>
+
+<H2>Critical Injuries</H2>
+<p><strong>Whenever two or more dice rolled for damage from a Melee or
+    Ranged Attack come up 6, you've inflicted a Critical Injury!</strong></p>
+
+<p><strong>Roll 2d6 on the appropriate Critical Injury Table until you get a Critical Injury that the target
+    isn't currently suffering.</strong> If you weren't using an Aimed Shot to target the head, roll on the Critical Injuries
+to the Body Table.</p>
+<p><strong>All Critical Injuries cause a horrible Injury Effect and deal 5 Bonus Damage</strong> directly to the
+    target's Hit Points when suffered. The Bonus Damage doesn't ablate armor and isn't modified by hit location.</p>
+<p>Critical Injuries and their Bonus Damage are inflicted regardless of if any of the attack's damage got through
+    the target's SP.</p>
+
+<p><strong>If the location of the wound is made up of Cyberware then substitute Cybertech Skill for the Quick Fix and/or Treatment Skill Checks.</strong></p>
+
+<h3>Critical Injuries to the Body</h3>
+<table class="rowshades">
+    <thead>
+        <tr>
+            <th>Roll (2d6)</th>
+            <th>Injury</th>
+            <th>Effect</th>
+            <th>Quick Fix</th>
+            <th>Treatment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="center">2</td>
+            <td>Dismembered Arm</td>
+            <td>The Dismembered Arm is gone. You drop any items in that dismembered
+                arm's hand immediately. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+            <td class="center na">N/A</td>
+            <td class="center">Surgery DV17</td>
+        </tr>
+        <tr>
+            <td class="center">3</td>
+            <td>Dismembered Hand</td>
+            <td>The Dismembered Hand is gone. You drop any items in that dismembered
+                hand immediately. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+            <td class="center na">N/A</td>
+            <td class="center">Surgery DV17</td>
+        </tr>
+        <tr>
+            <td class="center">4</td>
+            <td>Collapsed Lung</td>
+            <td>-2 to MOVE (minimum 1) <strong>Base Death Save Penalty is increased by 1.</strong></td>
+            <td class="center">Paramedic DV15</td>
+            <td class="center">Paramedic DV15<BR> or<BR> Surgery DV15</td>
+        </tr>
+        <tr>
+            <td class="center">5</td>
+            <td>Broken Ribs</td>
+            <td>At the end of every Turn where you move further than 4m/yds on foot,
+                you re-suffer this Critical Injury's Bonus Damage directly to your Hit Points.</td>
+            <td class="center">Paramedic DV13</td>
+            <td class="center">Paramedic DV15<BR> or<BR> Surgery DV13</td>
+        </tr>
+        <tr>
+            <td class="center">6</td>
+            <td>Broken Arm</td>
+            <td>The Broken Arm cannot be used. You drop any items in that
+                arm's hand immediately.</td>
+            <td class="center">Paramedic DV13</td>
+            <td class="center">Paramedic DV15<BR> or<BR> Surgery DV13</td>
+        </tr>
+        <tr>
+            <td class="center">7</td>
+            <td>Foreign Object</td>
+            <td>At the end of every Turn where you move further than 4m/yds on foot, you
+                re-suffer this Critical Injury's Bonus Damage directly to your Hit Points.</td>
+            <td class="center">First Aid DV13<BR> or<BR> Paramedic DV13</td>
+            <td class="center na">Quick Fix removes</td>
+        </tr>
+        <tr>
+            <td class="center">8</td>
+            <td>Broken Leg</td>
+            <td>-4 to MOVE (minimum 1)</td>
+            <td class="center">Paramedic DV13</td>
+            <td class="center">Paramedic DV15<BR> or<BR> Surgery DV13</td>
+        </tr>
+        <tr>
+            <td class="center">9</td>
+            <td>Torn Muscle</td>
+            <td>-2 to Melee Attacks</td>
+            <td class="center">First Aid DV13<BR> or<BR> Paramedic DV13</td>
+            <td class="center na">Quick Fix removes</td>
+        </tr>
+        <tr>
+            <td class="center">10</td>
+            <td>Spinal Injury</td>
+            <td>Next Turn, you cannot take an Action, but you can still take a Move Action. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+            <td class="center">Paramedic DV15</td>
+            <td class="center">Surgery DV15</td>
+        </tr>
+        <tr>
+            <td class="center">11</td>
+            <td>Crushed Fingers</td>
+            <td>-4 to all Actions involving that hand</td>
+            <td class="center">Paramedic DV13</td>
+            <td class="center">Surgery DV15</td>
+        </tr>
+        <tr>
+            <td class="center">12</td>
+            <td>Dismembered Leg</td>
+            <td>The Dismembered Leg is gone. -6 to MOVE (minimum 1)
+                You cannot dodge attacks. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+            <td class="center na">N/A</td>
+            <td class="center">Surgery DV17</td>
+        </tr>
+    </tbody>
+</table>
+<BR>
+<BR>
+<h3>Critical Injuries to the Head</h3>
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Roll (2d6)</th>
+        <th>Injury</th>
+        <th>Effect</th>
+        <th>Quick Fix</th>
+        <th>Treatment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="center">2</td>
+        <td>Lost Eye</td>
+        <td>The Lost Eye is gone. -4 to Ranged Attacks & Perception Checks involving vision. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+        <td class="center na">N/A</td>
+        <td class="center">Surgery DV17</td>
+    </tr>
+    <tr>
+        <td class="center">3</td>
+        <td>Brain Injury</td>
+        <td>-2 to all Actions. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+        <td class="center na">N/A</td>
+        <td class="center">Surgery DV17</td>
+    </tr>
+    <tr>
+        <td class="center">4</td>
+        <td>Damaged Eye</td>
+        <td>-2 to Ranged Attacks & Perception Checks involving vision.</td>
+        <td class="center">Paramedic DV15</td>
+        <td class="center">Surgery DV13</td>
+    </tr>
+    <tr>
+        <td class="center">5</td>
+        <td>Concussion</td>
+        <td>-2 to all Actions</td>
+        <td class="center">First Aid DV13<BR> or<BR> Paramedic DV13</td>
+        <td class="center na">Quick Fix Removes</td>
+    </tr>
+    <tr>
+        <td class="center">6</td>
+        <td>Broken Jaw</td>
+        <td>-4 to all Actions involving speech</td>
+        <td class="center">Paramedic DV13</td>
+        <td class="center">Paramedic DV13<BR> or<BR> Surgery DV13</td>
+    </tr>
+    <tr>
+        <td class="center">7</td>
+        <td>Foreign Object</td>
+        <td>At the end of every Turn where you move further than 4m/yds on foot, you
+            re-suffer this Critical Injury's Bonus Damage directly to your Hit Points.</td>
+        <td class="center">First Aid DV13<BR> or<BR> Paramedic DV13</td>
+        <td class="center na">Quick Fix Removes</td>
+    </tr>
+    <tr>
+        <td class="center">8</td>
+        <td>Whiplash</td>
+        <td><strong>Base Death Save Penalty is increased by 1.</strong></td>
+        <td class="center">Paramedic DV13</td>
+        <td class="center">Paramedic DV13<BR> or<BR> Surgery DV13</td>
+    </tr>
+    <tr>
+        <td class="center">9</td>
+        <td>Cracked Skull</td>
+        <td>Aimed Shots to your head multiply the damage that gets through your
+            SP by 3 instead of 2. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+        <td class="center">Paramedic DV15</td>
+        <td class="center na">Paramedic DV15<BR> or<BR> Surgery DV15</td>
+    </tr>
+    <tr>
+        <td class="center">10</td>
+        <td>Damaged Ear</td>
+        <td>Whenever you move further than 4m/yds on foot in a Turn, you cannot
+            take a Move Action on your next Turn. Additionally you take a -2 to
+            Perception Checks involving hearing.</td>
+        <td class="center">Paramedic DV13</td>
+        <td class="center">Surgery DV13</td>
+    </tr>
+    <tr>
+        <td class="center">11</td>
+        <td>Crushed Windpipe</td>
+        <td>You cannot speak. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+        <td class="center na">N/A</td>
+        <td class="center">Surgery DV15</td>
+    </tr>
+    <tr>
+        <td class="center">12</td>
+        <td>Lost Ear</td>
+        <td>The Lost Ear is gone. Whenever you move further than 4m/yds on foot in a
+            Turn, you cannot take a Move Action on your next Turn.
+            Additionally you take a -4 to Perception Checks involving hearing. <strong>Base Death Save Penalty is increased by 1.</strong></td>
+        <td class="center na">N/A</td>
+        <td class="center">Surgery DV17</td>
+    </tr>
+    </tbody>
+</table>
+<BR><BR>
+

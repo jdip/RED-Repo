@@ -2,37 +2,9 @@
 layout: default
 ---
 <article>
-    <h1>{{ page.name }}</h1>
-    {% if page.location != nil %}
-    Located in: <a href="{{ '/locations/' | relative_url }}{{ page.location | slugify }}">{{ page.location }}</a>
-    {% endif %}
-    <BR><BR>
-
+    <h1>Action: {{ page.name }}</h1>
+    <p><strong>{{ page.description }}</strong></p>
     {{ content }}
 
-    {% case page.type %}
-        {% when "region" %}
-            {% assign areas = site.locations | where: "type", "area" | where: "location", page.name %}
-            {% if areas.size > 0 %}
-            <h4>Notable Areas</h4>
-            {% assign list_types = "area" | split: "|" %}
-            {% include location_list.html level=0 types=list_types name=page.name %}
-            {% endif %}
-        {% when "area" %}
-            {% assign municipalities = site.locations | where: "type", "municipality" | where: "location", page.name %}
-            {% if municipalities.size > 0 %}
-            <h4>Notable Municipalities</h4>
-            {% assign list_types = "municipality" | split: "|" %}
-            {% include location_list.html level=0 types=list_types name=page.name %}
-            {% endif %}
-
-        {% when "municipality" or "poi" %}
-            {% assign pois = site.locations | where: "type", "poi" | where: "location", page.name %}
-            {% if pois.size > 0 %}
-            <h4>Points of Interest</h4>
-            {% assign list_types = "poi" | split: "|" %}
-            {% include location_list.html level=0 types=list_types name=page.name %}
-            {% endif %}
-    {% endcase %}
 
 </article>
