@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article>
+<article class="{{ page.name | slugify }}">
     <h1>Action: {{ page.name }}</h1>
     <p><strong>{{ page.description }}</strong></p>
     {{ content }}
