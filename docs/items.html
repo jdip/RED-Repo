@@ -12,23 +12,21 @@ permalink: /items/
             <th>Quality</th>
             <th>Type</th>
             <th>Price</th>
-            <th>Value</th>
             <th>Pg</th>
         </tr>
     </thead>
     <tbody>
         {% assign grouped_items = site.data.items | group_by: "group" | sort: "name" %}
         {% for group in grouped_items %}
-            <tr class="grouping"><td colspan="6"><strong>{{ group.name }}</strong></td></tr>
+            <tr class="grouping"><td colspan="5"><strong>{{ group.name }}</strong></td></tr>
             {% assign items = group.items | sort: "name" %}
             {% for item in items %}
                 <tr>
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.quality }}</td>
-                    <td>{{ item.type }}</td>
-                    <td class="right">{{ item.price }}eb</td>
-                    <td class="center">{{ item.value }}</td>
-                    <td class="right">{{ item.page }}</td>
+                    <td class="left middle quality_{{ item.quality | slugify }}">{{ item.name }}</td>
+                    <td class="center middle quality_{{ item.quality | slugify }}">{{ item.quality }}</td>
+                    <td class="center middle">{{ item.type }}</td>
+                    <td class="center middle">{{ item.price }}eb<br><small>({{ item.value }})</small></td>
+                    <td class="center middle">{{ item.page }}</td>
                 </tr>
             {% endfor %}
         {% endfor %}

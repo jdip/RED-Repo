@@ -36,7 +36,7 @@
 
 - name: "Alcohol"
   group: "Drug"
-  quality: "Average"
+  quality: "Standard"
   price: "20"
   value: "Everyday"
 
@@ -147,7 +147,7 @@
 - name: "Chemical Analyzer"
   group: "Gear"
   price: "1000"
-  value: "Very Expensive"
+  value: "V. Expensive"
   page: "352"
 
 - name: "Computer"
@@ -168,7 +168,7 @@
   value: "Costly"
   page: "353"
 
-- name: "Electric Guitar or Other Instrument"
+- name: "Musical Instrument"
   group: "Gear"
   price: "500"
   value: "Expensive"
@@ -177,7 +177,7 @@
 - name: "Medscanner"
   group: "Gear"
   price: "1000"
-  value: "Very Expensive"
+  value: "V. Expensive"
   page: "354"
 
 - name: "Homing Tracer"
@@ -195,7 +195,7 @@
 - name: "Techscanner"
   group: "Gear"
   price: "1000"
-  value: "Very Expensive"
+  value: "V. Expensive"
   page: "355"
 
 - name: "Smart Glasses"
@@ -225,7 +225,7 @@
 - name: "Braindance Viewer"
   group: "Gear"
   price: "1000"
-  value: "Very Expensive"
+  value: "V. Expensive"
   page: "352"
 
 - name: "Virtuality Goggles"
@@ -432,69 +432,285 @@
   value: "Expensive"
   page: "371"
 
-- name: "Medium Pistol"
+- name: "Dai Lung Streetmaster"
   group: "Ranged Weapon"
+  type: "M. Pistol"
+  quality: "Poor"
+  price: "20"
+  value: "Everyday"
+  page: "341"
+
+- name: "Federated Arms X-9mm"
+  group: "Ranged Weapon"
+  type: "M. Pistol"
+  quality: "Standard"
   price: "50"
   value: "Costly"
+  page: "341"
 
-- name: "Heavy Pistol"
+- name: 'Militech "Avenger"'
   group: "Ranged Weapon"
+  type: "M. Pistol"
+  quality: "Excellent"
   price: "100"
   value: "Premium"
+  page: "341"
 
-- name: "Very Heavy Pistol"
+- name: "Dai Lung Magnum"
   group: "Ranged Weapon"
+  type: "H. Pistol"
+  quality: "Poor"
+  price: "50"
+  value: "Costly"
+  page: "341"
+
+- name: 'Mustang Arms "Mark III"'
+  group: "Ranged Weapon"
+  type: "H. Pistol"
+  quality: "Standard"
   price: "100"
   value: "Premium"
+  page: "341"
 
-- name: "SMG"
+- name: 'Nova "Cityhunter"'
   group: "Ranged Weapon"
-  price: "100"
-  value: "Premium"
-
-- name: "Heavy SMG"
-  group: "Ranged Weapon"
-  price: "100"
-  value: "Premium"
-
-- name: "Shotgun"
-  group: "Ranged Weapon"
+  type: "H. Pistol"
+  quality: "Excellent"
   price: "500"
   value: "Expensive"
+  page: "341"
 
-- name: "Assault Rifle"
+- name: 'Federated Arms "Super Chief"'
   group: "Ranged Weapon"
+  type: "V.H. Pistol"
+  quality: "Poor"
+  price: "50"
+  value: "Costly"
+  page: "341"
+
+- name: "Sternmeyer P-35"
+  group: "Ranged Weapon"
+  type: "V.H. Pistol"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Militech "Boomer Buster"'
+  group: "Ranged Weapon"
+  type: "V.H. Pistol"
+  quality: "Excellent"
   price: "500"
   value: "Expensive"
+  page: "341"
+
+
+- name: "Federated Arms Tech-Assault III"
+  group: "Ranged Weapon"
+  type: "SMG"
+  quality: "Poor"
+  price: "50"
+  value: "Costly"
+  page: "341"
+
+- name: 'Militech "Mini-Gat"'
+  group: "Ranged Weapon"
+  type: "SMG"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Arasaka "Minami 10"'
+  group: "Ranged Weapon"
+  type: "SMG"
+  quality: "Excellent"
+  price: "500"
+  value: "Expensive"
+  page: "341"
+
+
+- name: 'Chadran Arms "City Reaper"'
+  group: "Ranged Weapon"
+  type: "Heavy SMG"
+  quality: "Poor"
+  price: "50"
+  value: "Costly"
+  page: "341"
+
+- name: "Sternmeyer SMG-21"
+  group: "Ranged Weapon"
+  type: "Heavy SMG"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Militech "Viper"'
+  group: "Ranged Weapon"
+  type: "Heavy SMG"
+  quality: "Excellent"
+  price: "500"
+  value: "Expensive"
+  page: "341"
+
+- name: 'GunMart "Home Defender"'
+  group: "Ranged Weapon"
+  type: "Shotgun"
+  quality: "Poor"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Arasaka "Rapid Assault"'
+  group: "Ranged Weapon"
+  type: "Shotgun"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  page: "341"
+
+- name: 'Militech "Bulldog"'
+  group: "Ranged Weapon"
+  type: "Shotgun"
+  quality: "Excellent"
+  price: "1000"
+  value: "V. Expensive"
+  page: "341"
+
+- name: 'Chadran Arms "Jungle Reaper"'
+  group: "Ranged Weapon"
+  type: "Assault Rifle"
+  quality: "Poor"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Militech "Ronin"'
+  group: "Ranged Weapon"
+  type: "Assault Rifle"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  page: "341"
+
+- name: 'Militech "Dragon"'
+  group: "Ranged Weapon"
+  type: "Assault Rifle"
+  quality: "Excellent"
+  price: "1000"
+  value: "V. Expensive"
+  page: "341"
 
 - name: "Sniper Rifle"
   group: "Ranged Weapon"
+  type: "Assault Rifle"
+  quality: "Standard"
   price: "500"
   value: "Expensive"
+  page: "341"
 
-- name: "Bow"
+- name: 'GunMart "Sherwood"'
   group: "Ranged Weapon"
+  type: "Bow"
+  quality: "Poor"
+  price: "50"
+  value: "Costly"
+  page: "341"
+
+- name: 'Eagletech "Tomcat"'
+  group: "Ranged Weapon"
+  type: "Bow"
+  quality: "Standard"
   price: "100"
   value: "Premium"
+  page: "341"
 
-- name: "Crossbow"
+- name: 'Eagletech "Bearcat"'
   group: "Ranged Weapon"
+  type: "Bow"
+  quality: "Excellent"
+  price: "500"
+  value: "Expensive"
+  page: "341"
+
+- name: 'GunMart "Hunter"'
+  group: "Ranged Weapon"
+  type: "Crossbow"
+  quality: "Poor"
+  price: "50"
+  value: "Costly"
+  page: "341"
+
+- name: 'Eagletech "Striker"'
+  group: "Ranged Weapon"
+  type: "Crossbow"
+  quality: "Standard"
   price: "100"
   value: "Premium"
+  page: "341"
 
-- name: "Grenade Launcher"
+- name: 'Eagletech "Scorpion"'
   group: "Ranged Weapon"
+  type: "Crossbow"
+  quality: "Excellent"
   price: "500"
   value: "Expensive"
+  page: "341"
 
-- name: "Rocket Launcher"
+
+- name: "Towa Manufacturing Type-G"
   group: "Ranged Weapon"
+  type: "Grenade Launcher"
+  quality: "Poor"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Militech "Mini-Grenade"'
+  group: "Ranged Weapon"
+  type: "Grenade Launcher"
+  quality: "Standard"
   price: "500"
   value: "Expensive"
+  page: "341"
+
+- name: "Tsunami Arms Type-18"
+  group: "Ranged Weapon"
+  type: "Grenade Launcher"
+  quality: "Excellent"
+  price: "1000"
+  value: "V. Expensive"
+  page: "341"
+
+- name: "Towa Manufacturing Type-R"
+  group: "Ranged Weapon"
+  type: "Rocket Launcher"
+  quality: "Poor"
+  price: "100"
+  value: "Premium"
+  page: "341"
+
+- name: 'Militech "Urban"'
+  group: "Ranged Weapon"
+  type: "Rocket Launcher"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  page: "341"
+
+- name: 'Militech "Hotshot"'
+  group: "Ranged Weapon"
+  type: "Rocket Launcher"
+  quality: "Excellent"
+  price: "1000"
+  value: "V. Expensive"
+  page: "341"
 
 - name: "Knife"
   group: "Melee Weapon"
   type: "Light"
+  quality: "Standard"
   price: "50"
   value: "Costly"
   page: 340
@@ -502,6 +718,7 @@
 - name: "Tomahawk"
   group: "Melee Weapon"
   type: "Light"
+  quality: "Standard"
   price: "50"
   value: "Costly"
   page: 340
@@ -509,6 +726,7 @@
 - name: "Baseball Bat"
   group: "Melee Weapon"
   type: "Medium"
+  quality: "Standard"
   price: "50"
   value: "Costly"
   page: 340
@@ -516,6 +734,7 @@
 - name: "Crowbar"
   group: "Melee Weapon"
   type: "Medium"
+  quality: "Standard"
   price: "50"
   value: "Costly"
   page: 340
@@ -523,6 +742,7 @@
 - name: "Machete"
   group: "Melee Weapon"
   type: "Medium"
+  quality: "Standard"
   price: "50"
   value: "Costly"
   page: 340
@@ -530,6 +750,7 @@
 - name: "Sword"
   group: "Melee Weapon"
   type: "Heavy"
+  quality: "Standard"
   price: "100"
   value: "Premium"
   page: 340
@@ -545,32 +766,34 @@
 - name: "Spiked Bat"
   group: "Melee Weapon"
   type: "Heavy"
+  quality: "Standard"
   price: "100"
   value: "Premium"
   page: 340
 
 - name: "Chainsaw"
   group: "Melee Weapon"
-  type: "Very Heavy"
+  type: "V. Heavy"
+  quality: "Standard"
   price: "500"
   value: "Expensive"
   page: 340
 
 - name: "Sledgehammer"
   group: "Melee Weapon"
-  type: "Very Heavy"
-  quality: "Poor"
-  price: "50"
-  value: "Costy"
-  page: 340
-
-- name: "Naginata"
-  group: "Melee Weapon"
-  type: "Very Heavy"
+  type: "V. Heavy"
+  quality: "Standard"
   price: "500"
   value: "Expensive"
   page: 340
 
+- name: "Naginata"
+  group: "Melee Weapon"
+  type: "V. Heavy"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  page: 340
 
 - name: "Cybereye"
   group: "Cyberware"

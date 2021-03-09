@@ -139,3 +139,18 @@ body {
 .middle {
   vertical-align: middle;
 }
+
+.quality_poor {
+  font-weight: bold;
+  color: $shade-300;
+}
+
+.quality_standard {
+  font-weight: bold;
+  color: $shade-50;
+}
+
+.quality_excellent {
+  font-weight: bold;
+  color: $triadic2-300;
+}
