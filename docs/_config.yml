@@ -22,6 +22,8 @@
 host: 0.0.0.0
 port: 4000
 
+plugins:
+  - jekyll-datapage-generator
 
 title: RED Repo
 subtitle: Endlessly changing, always the fucking same.
