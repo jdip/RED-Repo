@@ -8,13 +8,13 @@ export default [
 {% assign items = group.items | sort : "name" %}
 {% for item in items %}
 {
-    name: "{{item.name | xml_escape}}",
+    name: "{{item.name | escape}}",
     quality: "{{item.quality}}",
     type: "{{item.type}}",
     price: "{{item.price}}",
     value: "{{item.value}}",
-    {% if item.primary %}primary: [{% for effect in item.primary%}"{{effect | xml_escape}}"{% if forloop.last == false%}, {% endif %}{% endfor %}],{% endif %}
-    {% if item.secondary %}secondary: [{% for effect in item.secondary%}"{{effect | xml_escape}}"{% if forloop.last == false%}, {% endif %}{% endfor %}],{% endif %}
+    {% if item.primary %}primary: [{% for effect in item.primary%}"{{effect | escape}}"{% if forloop.last == false%}, {% endif %}{% endfor %}],{% endif %}
+    {% if item.secondary %}secondary: [{% for effect in item.secondary%}"{{effect | escape}}"{% if forloop.last == false%}, {% endif %}{% endfor %}],{% endif %}
     page: "{{item.page}}",
 }{% if forloop.last == false %},{% endif %}{% endfor %}{% if forloop.last == false %},{% endif %}
 {% endfor %}

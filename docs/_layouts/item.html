@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<article>
-    <h2>{{ page.name }}</h2>
-    <h4>Price: {{ page.price }}eb ({{ page.value }})</h4>
-    <p>{{page.description}}</p>
-    <br>
-</article>
+{% if page.group == 'Drug' %}
+{% include item-drug.html %}
+{% elsif page.group == 'Software - Black ICE' %}
+{% include item-blackice.html %}
+{% elsif page.group == 'Software - Program' %}
+{% include item-program.html %}
+{% else %}
+{% include item-default.html %}
+{% endif %}

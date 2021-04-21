@@ -1,0 +1,26 @@
+<article>
+    <h2>{{ page._name }}</h2>
+    <h4>Item: {{ page.group }}</h4>
+    <br>
+    <h4>Details</h4>
+    <table class="rowshades" width="100%">
+        <thead>
+        <tr>
+            <th class="center middle">Type</th>
+            <th class="center middle">Quality</th>
+            <th class="center middle">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="center middle">{{ page.type }}</td>
+            <td class="center middle">{{ page.quality }}</td>
+            <td class="center middle">{{ page.price }}eb <br><small>({{ page.value }})</small></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <h4>Description</h4>
+    <p>{{ page.description }}</p>
+    <br>
+</article>

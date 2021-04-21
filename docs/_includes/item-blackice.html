@@ -1,0 +1,48 @@
+<article>
+    <h2>{{ page._name }}</h2>
+    <h4>Item: {{ page.group }}</h4>
+    <br>
+    <h4>Details</h4>
+    <table class="rowshades" width="100%">
+        <thead>
+            <tr>
+                <th class="center middle">Type</th>
+                <th class="center middle">Quality</th>
+                <th class="center middle">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="center middle">{{ page.type }}</td>
+            <td class="center middle">{{ page.quality }}</td>
+            <td class="center middle">{{ page.price }}eb <br><small>({{ page.value }})</small></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <h4>Stats</h4>
+    <table class="rowshades" width="100%">
+        <thead>
+            <tr>
+                <th class="center middle" width="20%">Perception</th>
+                <th class="center middle" width="20%">Speed</th>
+                <th class="center middle" width="20%">Attack</th>
+                <th class="center middle" width="20%">Defense</th>
+                <th class="center middle" width="20%">Rez</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center middle">{{ page.per }}</td>
+                <td class="center middle">{{ page.spd }}</td>
+                <td class="center middle">{{ page.atk }}</td>
+                <td class="center middle">{{ page.def }}</td>
+                <td class="center middle">{{ page.rez }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h4>Effect</h4>
+    <p>{{ page.description }}</p>
+    <br>
+</article>

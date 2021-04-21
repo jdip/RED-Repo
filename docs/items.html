@@ -5,28 +5,26 @@ permalink: /items/
 ---
 
 <h1>Items</h1>
-<table class="rowshades">
+<table class="rowshades" width="100%">
     <thead>
         <tr>
-            <th>Name</th>
+            <th width="50%">Name</th>
             <th>Quality</th>
             <th>Type</th>
             <th>Price</th>
-            <th>Pg</th>
         </tr>
     </thead>
     <tbody>
         {% assign grouped_items = site.data.items | group_by: "group" | sort: "name" %}
         {% for group in grouped_items %}
-            <tr class="grouping"><td colspan="5"><strong>{{ group.name }}</strong></td></tr>
+            <tr class="grouping"><td colspan="4"><strong>{{ group.name }}</strong></td></tr>
             {% assign items = group.items | sort: "name" %}
             {% for item in items %}
                 <tr>
-                    <td class="left middle quality_{{ item.quality | slugify }}">{{ item.name }}</td>
+                    <td class="left middle quality_{{ item.quality | slugify }}"><a href="{{ item.name | append: '-' | append: item.quality | datapage_url: 'items' | relative_url }}">{{ item.name }}</a></td>
                     <td class="center middle quality_{{ item.quality | slugify }}">{{ item.quality }}</td>
                     <td class="center middle">{{ item.type }}</td>
                     <td class="center middle">{{ item.price }}eb<br><small>({{ item.value }})</small></td>
-                    <td class="center middle">{{ item.page }}</td>
                 </tr>
             {% endfor %}
         {% endfor %}

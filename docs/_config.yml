@@ -80,7 +80,7 @@ page_gen:
     template: 'item'
     dir: 'items'
     index_files: false
-    name: 'name'
+    name_expr: record["name"] + "-" + record["quality"]
     title_expr: '"Item: " + record["name"]'
 
 # Exclude from processing.

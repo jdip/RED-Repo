@@ -7,31 +7,6 @@ permalink: /night-markets/
 <script src="{{ '/assets/scripts/nightmarket-items.js' | relative_url}}" type="module"></script>
 <script src="{{ '/assets/scripts/nightmarket-generator.js' | relative_url}}" type="module"></script>
 
-<h1>Items</h1>
-<table class="rowshades">
-    <thead>
-    <tr>
-        <th>Name</th>
-        <th>Quality</th>
-        <th>Type</th>
-        <th>Price</th>
-        <th>Pg</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% assign grouped_items = site.data.items | group_by: "group" | sort: "name" %}
-    {% for group in grouped_items %}
-    <tr class="grouping"><td colspan="5"><strong>{{ group.name }}</strong></td></tr>
-    {% assign items = group.items | sort: "name" %}
-    {% for item in items %}
-    <tr>
-        <td class="left middle quality_{{ item.quality | slugify }}">{{ item.name }}</td>
-        <td class="center middle quality_{{ item.quality | slugify }}">{{ item.quality }}</td>
-        <td class="center middle">{{ item.type }}</td>
-        <td class="center middle">{{ item.price }}eb<br><small>({{ item.value }})</small></td>
-        <td class="center middle">{{ item.page }}</td>
-    </tr>
-    {% endfor %}
-    {% endfor %}
-    </tbody>
-</table>
+<h1>Night Markets</h1>
+
+Nothing to see here yet.
