@@ -5,14 +5,21 @@ permalink: /actions/
 ---
 
 <h1>Actions</h1>
-<table>
+<table class="rowshades">
     <tbody>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Description</th>
+            </tr>
+        </thead>
         {% assign actions = site.actions %}
         {% for action in actions %}
         <tr>
             <td width="150">
                 <a href="{{ action.url | relative_url }}" title="{{ action.description }}"> {{ action.name }}</a></h2>
             </td>
+            <td>{{ action.description }}</td>
         </tr>
         {% endfor %}
     </tbody>

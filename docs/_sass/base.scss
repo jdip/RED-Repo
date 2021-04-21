@@ -9,21 +9,23 @@ html {
 
 body {
   min-height: 100%;
+  min-width: 480px;
   width: 100%;
   overflow-y: scroll;
 }
 
 a {
-  color: $complementary-400;
+  color: $complementary-200;
   text-decoration: none;
+  font-weight: bold;
   &:visited {
-    color: $complementary-500;
-  }
-  &:hover {
     color: $complementary-200;
   }
+  &:hover {
+    color: $complementary-100;
+  }
   &:active {
-    color: $complementary-50;
+    color: white;
   }
 
 }
@@ -153,4 +155,26 @@ body {
 .quality_excellent {
   font-weight: bold;
   color: $triadic2-300;
+}
+
+.resolution {
+  background-color: $shade-200;
+  border: 2px solid black;
+  border-radius: 32px 4px 32px 4px;
+  padding: 32px;
+  @include font-size(4);
+  margin: 16px;
+  font-weight: bolder;
+  h3 {
+    color: $primary;
+    text-shadow: 1px 1px $shade-900;
+
+  }
+  color: black;
+  div.versus {
+    @include font-size(5);
+    font-style: italic;
+    font-variant: small-caps;
+    color: $shade-800;
+  }
 }

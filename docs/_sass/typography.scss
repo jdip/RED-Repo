@@ -32,10 +32,34 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   @include font-size(1);
+  color: $shade-50;
+  text-shadow: 2px 2px $primary;
+  margin-bottom: 8px;
+  &::after {
+    position: absolute;
+    top: 42px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid $shade-50;
+  }
 }
 
 h2 {
   @include font-size(2);
+  color: $shade-50;
+  text-shadow: 2px 2px black;
+  margin-bottom: 8px;
+  &::after {
+    position: absolute;
+    top: 32px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid $shade-50;
+  }
 }
 
 h3 {

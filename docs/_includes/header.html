@@ -1,16 +1,64 @@
 <header>
-    <h1><a href="{{ '/' | relative_url }}">RED Repo</a></h1>
-    <nav>
-        <a href="{{ '/skills/' | relative_url }}">Skills</a>
-        | <a href="{{ '/actions/' | relative_url }}">Actions</a>
-        | <a href="{{ '/melee-combat/' | relative_url }}">Melee</a>
-        | <a href="{{ '/ranged-combat/' | relative_url }}">Ranged</a>
-        | <a href="{{ '/trauma/' | relative_url }}">Trauma</a>
-        | <a href="{{ '/health/' | relative_url }}">Health</a>
-        | <a href="{{ '/reputation/' | relative_url }}">Rep</a>
-        | <a href="{{ '/hustle/' | relative_url }}">Hustle</a>
-        | <a href="{{ '/lifestyle/' | relative_url }}">Lifestyle</a>
-        | <a href="{{ '/items/' | relative_url }}">Items</a>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
 
-    </nav>
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1><a href="{{ '/' | relative_url }}">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="{{ '/assets/icons/menu3.svg' | relative_url }}" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="{{ '/assets/icons/arrow-down5.svg' | relative_url }}" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="{{ '/skills/' | relative_url }}">Skills</a>
+                <a href="{{ '/actions/' | relative_url }}">Actions</a>
+                <a href="{{ '/reputation/' | relative_url }}">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="{{ '/melee-combat/' | relative_url }}">Melee</a>
+                <a href="{{ '/ranged-combat/' | relative_url }}">Ranged</a>
+                <a href="{{ '/trauma/' | relative_url }}">Trauma</a>
+                <a href="{{ '/health/' | relative_url }}">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="{{ '/interfacing/' | relative_url }}">Interfacing</a>
+                <a href="{{ '/net-combat/' | relative_url }}">Combat</a>
+                <a href="{{ '/net-architectures/' | relative_url }}">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="{{ '/hustle/' | relative_url }}">Hustle</a>
+                <a href="{{ '/lifestyle/' | relative_url }}">Lifestyle</a>
+                <a href="{{ '/improvement/' | relative_url }}">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="{{ '/items/' | relative_url }}">Items</a>
+            </div>
+        </nav>
+    </div>
 </header>

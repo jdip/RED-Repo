@@ -2,8 +2,13 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {%- include head.html -%}
-
-<body>
+<script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();">
 
 {%- include header.html -%}
 
