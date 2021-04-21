@@ -71,6 +71,16 @@ defaults:
     values:
       layout: item
 
+page_gen-dirs: false
+
+page_gen:
+  - data: 'items'
+    template: 'item'
+    dir: 'items'
+    index_files: false
+    name: 'name'
+    title_expr: '"Item: " + record["name"]'
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
