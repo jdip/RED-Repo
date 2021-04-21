@@ -155,7 +155,7 @@
   group: "Personal Electronics"
   price: "100"
   value: "Premium"
-  description: "An Agent"
+  description: "An Agent Test"
   page: "352"
 
 - name: "Audio Recorder"
