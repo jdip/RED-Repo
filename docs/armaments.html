@@ -1,0 +1,32 @@
+---
+layout: default
+title: Armaments
+permalink: /armaments/
+---
+
+<h1>Armaments</h1>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th width="50%">Name</th>
+        <th>Quality</th>
+        <th>Type</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% assign grouped_items = site.data.items | where_exp: "item","item.group contains 'Weapon' or item.group == 'Armor'" | group_by: "group" | sort: "name" %}
+    {% for group in grouped_items %}
+    <tr class="grouping"><td colspan="4"><strong>{{ group.name }}</strong></td></tr>
+    {% assign items = group.items | sort: "name" %}
+    {% for item in items %}
+    <tr>
+        <td class="left middle quality_{{ item.quality | slugify }}"><a href="{{ item.name | append: '-' | append: item.quality | datapage_url: 'items' | relative_url }}">{{ item.name }}</a></td>
+        <td class="center middle quality_{{ item.quality | slugify }}">{{ item.quality }}</td>
+        <td class="center middle">{{ item.type }}</td>
+        <td class="center middle">{{ item.price }}eb<br><small>({{ item.value }})</small></td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+    </tbody>
+</table>

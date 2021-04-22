@@ -4,6 +4,7 @@
   quality: "Standard"
   price: "10"
   value: "Cheap"
+  description: "Its a can. Of goods."
 
 - name: "Packaged goods"
   group: "Food"
@@ -11,6 +12,7 @@
   quality: "Standard"
   price: "10"
   value: "Cheap"
+  description: "Its a package. Of goods."
 
 - name: "Frozen Goods"
   group: "Food"
@@ -18,6 +20,7 @@
   quality: "Standard"
   price: "10"
   value: "Cheap"
+  description: "Its frozen. Good."
 
 - name: "Food Stick"
   group: "Food"
@@ -34,6 +37,7 @@
   quality: "Standard"
   price: "20"
   value: "Everyday"
+  description: "A bag, full of grain."
 
 - name: "Kibble Pack"
   group: "Food"
@@ -52,6 +56,7 @@
   quality: "Standard"
   price: "20"
   value: "Everyday"
+  description: "A bag of basic foodstuffs"
 
 - name: "Alcohol"
   group: "Drug"
@@ -59,6 +64,7 @@
   quality: "Poor"
   price: "10"
   value: "Cheap"
+  description: "Works as well as the good stuff"
 
 - name: "Alcohol"
   group: "Drug"
@@ -66,6 +72,7 @@
   quality: "Standard"
   price: "20"
   value: "Everyday"
+  description: "The workingman's therapy."
 
 - name: "Alcohol"
   group: "Drug"
@@ -73,6 +80,7 @@
   quality: "Excellent"
   price: "100"
   value: "Premium"
+  description: "You don't want to get drunk looking like a poor, do you?"
 
 - name: "MRE"
   group: "Food"
@@ -91,6 +99,7 @@
   quality: "Standard"
   price: "50"
   value: "Costly"
+  description: "Is it alive? Yes. Is its DNA 100% old world chicken? No."
 
 - name: "Live Fish"
   group: "Food"
@@ -98,6 +107,7 @@
   quality: "Standard"
   price: "50"
   value: "Costly"
+  description: "Not live for long unless you happen to have a convenient portable 100lb fish tank."
 
 - name: "Fruits"
   group: "Food"
@@ -105,6 +115,7 @@
   quality: "Standard"
   price: "50"
   value: "Costly"
+  description: "Straight from the robotic hydroponics farm to your plate"
 
 - name: "Vegetables"
   group: "Food"
@@ -112,6 +123,7 @@
   quality: "Standard"
   price: "50"
   value: "Costly"
+  description: "Straight from the robotic hydroponics farm to your plate"
 
 - name: "Vegetables"
   group: "Food"
@@ -119,6 +131,7 @@
   quality: "Standard"
   price: "20"
   value: "Everyday"
+  description: "Genetically engineered to a shelf life of 800 days. Yes it is safe. No that one of there isn't walking on its owm."
 
 - name: "Live Pig"
   group: "Food"
@@ -126,6 +139,7 @@
   quality: "Standard"
   price: "100"
   value: "Premium"
+  description: "Studies have shown that genetically boosting the intelligence of this lovable species makes the bacon taste better."
 
 - name: "Fruits"
   group: "Food"
@@ -133,6 +147,7 @@
   quality: "Standard"
   price: "100"
   value: "Premium"
+  description: "Might be from some obscure tropical island, or an isolated Antarctic lab."
 
 - name: "Vegetables"
   group: "Food"
@@ -140,6 +155,7 @@
   quality: "Standard"
   price: "100"
   value: "Premium"
+  description: "Caffeinated carrots that taste like coffee? Why the hell not?"
 
 - name: "Blue Glass"
   group: "Drug"
@@ -634,39 +650,7 @@
                 bag. The whole thing folds to a 6\"x6\" package for
                  easy storage."
 
-- name: "Linear Frame ß (Beta)"
-  group: "Cyberware"
-  quality: "Standard"
-  price: "5000"
-  value: "Luxury"
-  description: "Powered exoskeleton,
-                giving the user even more tremendous strength.
-                <ul class='bullet-list'>
-                <li> User increases their BODY to 14 while plugged
-                into the frame. This cannot increase the user's
-                BODY to 15 or higher. This increase in BODY
-                does not increase the user's HP or change their
-                Death Save.</li>
-                <li>Requires 2 installation of Interface Plugs to
-                           operate.</li>
-                 </ul>"
 
-- name: "Linear Frame Σ (Sigma)"
-  group: "Cyberware"
-  quality: "Standard"
-  price: "1000"
-  value: "V. Expensive"
-  description: "Powered exoskeleton,
-                giving the user tremendous strength.
-                <ul class='bullet-list'>
-                <li>User increases their BODY to 12 while plugged
-                into the frame. This cannot increase the user's
-                BODY to 13 or higher. This increase in BODY
-                does not increase the user's HP or change their
-                Death Save.</li>
-                <li>Requires 1 installations of Interface Plugs to
-                            operate.</li>
-                </ul>"
 
 - name: "Lock Picking Set"
   group: "Gear"
@@ -890,46 +874,63 @@
                 Highly advised for Netrunners."
 
 - name: "Backup Drive"
-  group:  "Cyberdeck Hardware"
+  group: "Gear"
+  type:  "Cyberdeck Hardware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-  description: ""
+  description: "While installed on a Cyberdeck, a Backup Drive \"saves\" Non-Black ICE Attacker, Defender, or Booster Programs
+                 that are destroyed by pulling them into the Backup Drive the instant before they meet their end. As a Meat
+                 Action, a Netrunner can re-install all Programs \"saved\" by the Backup Drive onto their deck, if they have
+                 the Slots for them. If removed from a Cyberdeck, the Backup Drive erases its contents automatically. Restored
+                 Programs with once-per-Netrun restrictions and the like are restored in the exact state they were saved in, so
+                 you can't kill your own Armor to refresh it. Yeah, that means you. <strong>Takes 2 Hardware Option Slots.</strong>"
 
 - name: "DNA Lock"
-  group:  "Cyberdeck Hardware"
+  group: "Gear"
+  type:  "Cyberdeck Hardware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-  description: ""
+  description: "A Cyberdeck with a DNA Lock can be locked and unlocked using a thumbprint, iris scan, blood sample, or
+                any other biometric method desired. The method varies depending on the model of the DNA Lock. A locked
+                Cyberdeck cannot be accessed without either its biometric key or a DV 17 Electronics/Security Tech Check.
+                <strong>Takes 2 Hardware Option Slots.</strong>"
 
 - name: "Hardened Circuitry"
-  group:  "Cyberdeck Hardware"
+  group: "Gear"
+  type:  "Cyberdeck Hardware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-  description: ""
+  description: "A Cyberdeck with Hardened Circuitry cannot be rendered temporarily disabled, rendered inoperable, or
+                destroyed by EMP effects like pulses, or Non-Black ICE Program Effects."
 
 - name: "Insulated Wiring"
-  group:  "Cyberdeck Hardware"
+  group: "Gear"
+  type:  "Cyberdeck Hardware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-  description: ""
+  description: "A Cyberdeck with Insulated Wiring cannot catch fire or cause the user's clothing to catch fire as the result of a
+                Program effect."
 
 - name: "KRASH Barrier"
-  group:  "Cyberdeck Hardware"
+  group: "Gear"
+  type:  "Cyberdeck Hardware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-  description: ""
+  description: "A Cyberdeck with a KRASH Barrier is immune to any Program Effect that force the Netrunner to Jack Out, safely
+                or unsafely. <strong>Takes 2 Hardware Option Slots.</strong>"
 
 - name: "Range Upgrade"
-  group:  "Cyberdeck Hardware"
+  group: "Gear"
+  type:  "Cyberdeck Hardware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-  description: ""
+  description: "A Cyberdeck with a Range Upgrade can connect to an access point from up to 8m away."
 
 
 - name: "Eraser"
@@ -1931,34 +1932,774 @@
                 Critical injury (see pg. 188) for the next minute. You do not take the Bonus Damage from the Critical Injury."
 
 
+- name: "Leathers"
+  group: "Armor"
+  type: "Armor"
+  quality: "Standard"
+  price: "20"
+  value: "Everyday"
+  sp: "4"
+  penalty: "None"
+  description: "Thin leather with reinforced pads at shoulders, hips, and gut. Favored by Nomads and other 'punks who ride
+                bikes. This also includes all those road-warrior wannabes wearing open-butt chaps and random sports equipment."
 
-- name: "Cybereye"
-  group:  "Cyberware"
+- name: "Kevlar®"
+  group: "Armor"
+  type: "Armor"
+  quality: "Standard"
+  price: "50"
+  value: "Costly"
+  sp: "7"
+  penalty: "None"
+  description: "The favored protection for the past 90 years. To quote DuPont: Kevlar® is a heat-resistant, synthetic,
+                lightweight fiber that delivers high tensile strength that brings improved protection and performance across
+                a range of industries and applications. Like when people are trying to stab or shoot you. Can be made into
+                clothes, vests, jackets, business suits, and even bikinis."
+
+- name: "Light Armorjack"
+  group: "Armor"
+  type: "Armor"
   quality: "Standard"
   price: "100"
   value: "Premium"
+  sp: "11"
+  penalty: "None"
+  description: "A combination of Kevlar® and plastic meshes inserted into the weave of the fabric. Armorjack
+                provides superior protection, especially against high-velocity bullets."
 
-- name: "Cyberaudio Suite"
-  group:  "Cyberware"
+- name: "Bodyweight Suit"
+  group: "Armor"
+  type: "Armor"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  sp: "11"
+  penalty: "None"
+  description: "Skinsuit with impact absorbing, sintered armorgel layered in key body areas. Surprisingly,
+                they are also breathable and quite comfortable. Besides giving you a measure of protection, a Bodyweight
+                Suit also has a place to store your Cyberdeck and supports your Interface Plugs so they stay out of the way
+                while you're busy brain-burning that fool who just dared to pop a Hellhound on you. Many Netrunners wear
+                clothing over their Bodyweight Suits, but plenty don't. It's a matter of personal style. <strong>Unlike other armor,
+                a Bodyweight Suit isn't bought in two pieces, and must always be worn on both your
+                body and head location.</strong> Each location has its own SP11. When repaired, both pieces are repaired at
+                the same time. You can't wear more than one Bodyweight Suit. <strong>Wearing a Bodyweight Suit adds one
+                Hardware only Option Slot to a Cyberdeck connected to it.</strong> Hardware installed in the Bodyweight
+                Suit cannot be accessed if the armor isn't worn and can only take up 1 Option Slot."
+
+- name: "Medium Armorjack"
+  group: "Armor"
+  type: "Armor"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  sp: "12"
+  penalty: "-2 REF, DEX, and MOVE"
+  description: "Heavier Armorjack, with solid plastic plating, reinforced with thicker Kevlar® mesh.
+                Typical Street wear, this combines decent protection with a decent ost."
+
+- name: "Heavy Armorjack"
+  group: "Armor"
+  type: "Armor"
   quality: "Standard"
   price: "500"
   value: "Expensive"
+  sp: "13"
+  penalty: "-2 REF, DEX, and MOVE"
+  description: "The thickest Armorjack, combining denser Kevlar® and a layered mix of plastic and mesh
+                weaves. It stops all but the heaviest attacks, but costs a pretty eb."
+
+- name: "Flak"
+  group: "Armor"
+  type: "Armor"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  sp: "15"
+  penalty: "-4 REF, DEX, and MOVE"
+  description: "The thickest Armorjack, combining denser Kevlar® and a layered mix of plastic and mesh
+                weaves. It stops all but the heaviest attacks, but costs a pretty eb."
+
+- name: "Metalgear®"
+  group: "Armor"
+  type: "Armor"
+  quality: "Standard"
+  price: "5000"
+  value: "Luxury"
+  sp: "18"
+  penalty: "-4 REF, DEX and MOVE"
+  description: "You know how Evil Empire Storm Troopers just seem to stand there and take the hit? Metalgear® is
+                the Dark Future equivalent of that type of armor: solid metal and plastic plates on a mesh body cover. Metalgear®
+                will stop almost anything, but you're going to be easier to hit than a one-legged bantha in a potho race."
+
+- name: "Bulletproof Shield"
+  group: "Armor"
+  type: "Shield"
+  quality: "Standard"
+  price: "50"
+  value: "Costly"
+  hp: "10 (reduced by damage)"
+  penalty: "None, but always takes up one arm"
+  description: "A transparent polycarbonate shield that can protect you in a firefight. See Using a Shield
+                in the Friday Night Firefight Section (pg. 183)"
+
+- name: "Linear Frame ß (Beta)"
+  group: "Cyberware"
+  type: "Exoskeleton"
+  quality: "Standard"
+  price: "5000"
+  install: "N/A"
+  value: "Luxury"
+  description: "Powered exoskeleton,
+                giving the user even more tremendous strength.
+                <ul class='bullet-list'>
+                <li> User increases their BODY to 14 while plugged
+                into the frame. This cannot increase the user's
+                BODY to 15 or higher. This increase in BODY
+                does not increase the user's HP or change their
+                Death Save.</li>
+                <li>Requires 2 installation of Interface Plugs to
+                           operate.</li>
+                 </ul>"
+
+- name: "Linear Frame Σ (Sigma)"
+  group: "Cyberware"
+  type: "Exoskeleton"
+  quality: "Standard"
+  price: "1000"
+  install: "N/A"
+  value: "V. Expensive"
+  description: "Powered exoskeleton,
+                giving the user tremendous strength.
+                <ul class='bullet-list'>
+                <li>User increases their BODY to 12 while plugged
+                into the frame. This cannot increase the user's
+                BODY to 13 or higher. This increase in BODY
+                does not increase the user's HP or change their
+                Death Save.</li>
+                <li>Requires 1 installations of Interface Plugs to
+                            operate.</li>
+                </ul>"
+
+- name: "Biomonitor"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Subdermal implant which generates a constant LED readout of pulse, temperature,
+                respiration, blood sugar, etc. You can link your Biomonitor to your Agent to allow it to
+                track your wellness."
+
+- name: "Chemskin"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Dyes and pigments infused into the skin to permanently change its hue, the applications
+                of which can range from hiding blemishes to the desire for neon-green skin. Pigments can
+                optionally be temperature-sensitive or reactant to hormone changes in the body. <strong>A user
+                with Chemskin and Techhair adds +2 to their Personal Grooming Skill for
+                having both. (This bonus only applies once)</strong>"
+
+- name: "EMP Threading"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "10"
+  value: "Cheap"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Popularized by the media sensation UR, these thin silver lines run in circuit-like patterns
+                across the body. Many people believe they act as a \"Faraday cage\" to protect you from
+                 radiation and EMP effects but so far there’s no scientific backing to these claims. But they
+                 sure do look cool. Most people wear EMP Threading as a fashion statement."
+
+- name: "Light Tattoo"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Subdermal patches store light and project colored tattoos under the skin. The larger the
+                piece, the more installations of this fashionware you need to complete it. <strong>A user with a
+                three or more Light Tattoo installations adds +2 to their Wardrobe & Style Skill.
+                (This bonus only applies once.)</strong>"
+
+- name: "Shift Tacts"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Color-changing lenses implanted into the eye. Several patterns are also available. Lenses
+                can optionally be temperature-sensitive or reactant to hormone changes in the body. Only
+                one choice of color and pattern can be made, but the user can deactivate the color change
+                at any time desired without an Action."
+
+- name: "Skinwatch"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Subdermal implant generates a constant LED readout of the current time and date visible
+                through the skin."
+
+- name: "Techhair"
+  group:  "Cyberware"
+  type: "Fashionware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Color-light-emitting artificial hair. Hair can optionally be temperature sensitive, motorized
+                to extend/retract, or reactant to hormone changes in the body. <strong>A user with Chemskin
+                and Techhair adds +2 to their Personal Grooming Skill for having both. (This
+                bonus only applies once.)</strong>"
 
 - name: "Neural Link"
   group:  "Cyberware"
+  type: "Neuralware"
   quality: "Standard"
   price: "500"
   value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Wired artificial nervous system, required to use Neuralware, and Subdermal Grips.
+                System has 5 Option Slots for Neuralware options."
 
-- name: "Cyberarm"
+- name: "Braindance Recorder"
   group:  "Cyberware"
+  type: "Neuralware"
   quality: "Standard"
   price: "500"
   value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Neuralware Option. Share your story from your point of view! Records braindance content
+                to a standard Memory Chip or a linked Agent. Braindances can be viewed using
+                a Braindance Viewer. Requires Neural Link."
 
-- name: "Cyberleg"
+- name: "Chipware Socket"
   group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Neuralware Option. A single socket installed in the back of the neck that allows quick
+                installation of a single piece of Chipware, of which there are many varieties.
+                Installing or uninstalling a single piece of Chipware from a Chipware Socket is an Action.
+                The first time you install a piece of Chipware you've never used before, you always
+                accrue Humanity Loss. Re-installing Chipware you've already used doesn't do this.
+                <strong>Chipware does not take up a Neural Link Option Slot.</strong>
+                Multiple sockets may be installed, but each must be paid for individually. <strong>Requires
+                Neural Link.</strong>"
+
+- name: "Interface Plugs"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Neuralware Option. Plugs in the wrist or head that allow user to jack into and make use
+                of Smartguns, Cyberdecks, heavy machinery, and drive vehicles with no hands! Multiple
+                installations allow user to be plugged into multiple things at the same time.  <strong>Requires
+                Neural Link.</strong>"
+
+- name: "Kerenzikov"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "Neuralware Option. Always-on Speedware that provides consistently improved reaction time.
+                User adds +2 to their Initiative Rolls. Only a single piece of Speedware can be installed
+                into a user at a time. <strong>Requires Neural Link.</strong>"
+
+- name: "Sandevistan"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Neuralware Option. Speedware that provides short boosts of highly improved reaction time.
+                When activated as an Action, the user adds +3 to any Initiative Roll they make in the
+                next minute, after which Sandevistan cannot be activated again for an hour. Only a
+                single piece of Speedware can be installed into a user at a time. <strong>Requires Neural Link.</strong>"
+
+- name: "Chemical Analyzer"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "N/A"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Chipware. While installed into a Chipware Socket, allows user to test substances to find
+                their precise chemical composition as an Action, identifying most substances instantly
+                from a wide database of samples. <strong>Requires Chipware Socket.</strong>"
+
+- name: "Memory Chip"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "10"
+  value: "Cheap"
+  install: "N/A"
+  humanity_loss: "0"
+  humanity_loss_roll: "(N/A)"
+  description: "Chipware. The standard for data storage. While installed into a Chipware socket, the user's
+                cyberware can store data on it or access data stored on it. <strong>Requires Chipware Socket.</strong>"
+
+- name: "Olfactory Boost"
+  group:  "Cyberware"
+  type: "Neuralware"
   quality: "Standard"
   price: "100"
   value: "Premium"
-    
+  install: "N/A"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Chipware. While installed into a Chipware Socket, the user's sense of smell is boosted,
+                allowing them to use the Tracking Skill to track scent in addition to visual clues.
+                <strong>Requires Chipware Socket.</strong>"
+
+- name: "Pain Editor"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "N/A"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "Chipware. While installed into a Chipware Socket, a Pain Editor shuts off the user's pain
+                receptors dynamically, allowing them to ignore the effects of the Seriously Wounded
+                Wound State. <strong>Requires Chipware Socket.</strong>"
+
+- name: "Skill Chip"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "N/A"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Chipware. While installed into a Chipware Socket, a Skill Chip makes the Skill it was
+                made for trained for the user at +3, unless the user's Skill was already trained higher
+                than +3, in which case it does nothing. Skill Chips for (x2) cost Skills are 1,000eb, chips
+                for all other skills are 500eb. <strong>Requires Chipware Socket.</strong>"
+
+- name: "Skill Chip x2"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "N/A"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Chipware. While installed into a Chipware Socket, a Skill Chip makes the Skill it was
+                made for trained for the user at +3, unless the user's Skill was already trained higher
+                than +3, in which case it does nothing. Skill Chips for (x2) cost Skills are 1,000eb, chips
+                for all other skills are 500eb. <strong>Requires Chipware Socket.</strong>"
+
+- name: "Tactile Boost"
+  group:  "Cyberware"
+  type: "Neuralware"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "N/A"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Chipware. While installed into a Chipware Socket, it boosts the user's sense of touch,
+                allowing them to detect motion within 20m/yds of them, as long as their hand is
+                touching a surface. While in use as a motion detector, that hand can't be used to do
+                anything else. <strong>Requires Chipware Socket.</strong>"
+
+
+- name: "Cybereye"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "All cyberoptics options are installed in an artificial eye that replaces a meat one. Each
+                Cybereye has 3 Option Slots for Cybereye Options.
+                Some options must be paired to work properly (purchased twice and installed in two
+                different Cybereyes on a user. Humanity Loss is calculated separately for each purchase)."
+
+- name: "Anti-Dazzle"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. User is immune to blindness or other effects caused by dangerous
+                flashes of light, like those of a flashbang. <strong>Requires two Cybereyes and must be
+                paired.</strong>"
+
+- name: "Chyron"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. Projects a tiny subscreen into user's normal field of vision for messages,
+                video, etc. from a user's other cyberware or electronics. Picture in a picture for real life.
+                <strong>Requires a Cybereye.</strong>"
+
+- name: "Color Shift"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. Cosmetic upgrade allows unlimited color and pattern changes to be
+                made as an Action. Eye can optionally be temperature sensitive or reactant to hormone
+                changes in the body. <strong>Requires a Cybereye.</strong>"
+
+- name: "Dartgun"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. Dartgun Exotic Weapon, with only a single shot in the clip, concealed inside
+                the Cybereye. Requires a Cybereye and takes 3 Option Slots."
+
+- name: "Image Enhance"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Mall"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cybereye Option. User adds +2 to their Perception, Lip Reading, and Conceal/Reveal Object
+                Skills for Checks which include sight. <strong>Requires two Cybereyes and must be paired.</strong>
+                Multiple installations of this option provide user no additional benefit."
+
+- name: "Low Light/Infrared/UV"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Mall"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cybereye Option. Reduces penalties imposed by darkness and other intangible
+                obscurement, like smoke, fog, etc. to 0. User can distinguish hot meat from cold metal
+                but cannot see through anything that could provide cover. <strong>Requires two Cybereyes,
+                must be paired, and takes 2 Option Slots per Cybereye.</strong>"
+
+- name: "MicroOptics"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. Microscope providing user up to 400x magnification. <strong>Requires a
+                Cybereye.</strong>"
+
+- name: "MicroVideo"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. Camera in eye records video and audio to a standard Memory Chip or a
+                linked Agent. <strong>Requires a Cybereye and takes 2 Option Slots.</strong>"
+
+- name: "Radiation Detector"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cybereye Option. Radiation readings within 100m/yds of the user are displayed in user's
+                vision hovering over their source in the form of a blue glow. <strong>Requires a Cybereye.</strong>"
+
+- name: "Targeting Scope"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cybereye Option. User gets a +1 to their Check when making an Aimed Shot. Multiple
+                installations of this option provide user no additional benefit. <strong>Requires a Cybereye.</strong>"
+
+- name: "TeleOptics"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cybereye Option. User can see detail up to 800m/yds away. When attacking a target
+                51m/yds or further away with either a weapon's single shot firing mode or an Aimed
+                Shot, you can add a +1 to your Check. Multiple installations of this option provide user
+                no additional benefit. Does not stack with Sniping Scope Weapon Attachment. <strong>Requires
+                a Cybereye.</strong>"
+
+- name: "Virtuality"
+  group:  "Cyberware"
+  type: "Cyberoptics"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cybereye Option. Projects cyberspace imagery over user's view of the world. Never forget
+                your Virtuality Goggles again. <strong>Requires two Cybereyes and must be paired.</strong>"
+
+
+- name: "Cyberaudio Suite"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinc"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberaudio Suite is installed invisibly in the inner skull.
+                System has 3 Option Slots for Cyberaudio Options. User can only have one Cyberaudio
+                Suite installed."
+
+- name: "Amplified Hearing"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberaudio Option. User adds +2 to their Perception Skill for Checks which include
+                hearing. <strong>Requires a Cyberaudio Suite.</strong> Multiple installations of this option provide
+                user no additional benefit."
+
+- name: "Audio Recorder"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. Records audio to a standard Memory Chip or a linked Agent.
+                <strong>Requires a Cyberaudio Suite.</strong>"
+
+- name: "Bug Detector"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. Beeps when user is within 2m/yds of a tap, bug, or other listening
+                device. <strong>Requires a Cyberaudio Suite.</strong>"
+
+- name: "Homing Tracer"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. Can follow a linked tracer up to 1 mile away. Comes with a free
+                button-sized linked tracer. Replacements are 50eb. <strong>Requires a Cyberaudio Suite.</strong>"
+
+- name: "Internal Agent"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberaudio Option. Fully functional Agent (See Gear Section pg. 352), controlled
+                entirely via voice commands. Images are described, but output can be linked to a Cybereye
+                with Chyron or a nearby screen if visual output is desired. The implanted Agent's Memory
+                Chip cannot be removed without surgery. <strong>Requires a Cyberaudio Suite.</strong>"
+
+- name: "Level Damper"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. Automatic noise compensation. User is immune to deafness or
+                other effects caused by dangerously loud noises, like those produced by a flashbang.
+                <strong>Requires a Cyberaudio Suite.</strong>"
+
+- name: "Radio Communicator"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. User can communicate via radio, 1-mile range. <strong>Requires a
+                Cyberaudio Suite.</strong>"
+
+- name: "Radio Scanner/Music Player"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "50"
+  value: "Costly"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. User can use an Action to scan all radio bands within a mile that
+                are currently being used and tune into them. Music player can link to the Data Pool
+                to listen to the hottest music or play directly from a Memory Chip. Understanding
+                scrambled channels requires a Scrambler/Descrambler. <strong>Requires a Cyberaudio Suite.</strong>"
+
+- name: "Radar Detector"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. Beeps if active radar beam is present within 100m/yds. <strong>Requires
+                a Cyberaudio Suite.</strong>"
+
+- name: "Scrambler Descrambler"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "Cyberaudio Option. Allows user to scramble outgoing communications so they cannot be
+                understood without a descrambler, which is also included at no extra charge. <strong>Requires
+                a Cyberaudio Suite.</strong>"
+
+- name: "Voice Stress Analyzer"
+  group:  "Cyberware"
+  type: "Cyberaudio"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberaudio Option. User adds +2 to their Human Perception and Interrogation Skills
+                User can activate a special lie-detecting function for a minute with an Action, during
+                which time the GM rolls all your Character's Human Perception and Interrogation Checks
+                privately, beeping once whenever it detects a lie, or whenever they desire after a failed
+                roll. Beware of false positives and negatives. <strong>Requires a Cyberaudio Suite.</strong>
+                Multiple installations of this option provide user no additional benefit."
+
+
+
+- name: "Neural Link"
+  group:  "Cyberware"
+  type: "type"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  description: "description"
+
+- name: "Cyberarm"
+  group:  "Cyberware"
+  type: "type"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  description: "description"
+
+- name: "Cyberleg"
+  group:  "Cyberware"
+  type: "type"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  description: "description"
