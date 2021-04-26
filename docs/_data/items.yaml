@@ -2043,7 +2043,7 @@
                 in the Friday Night Firefight Section (pg. 183)"
 
 - name: "Linear Frame ß (Beta)"
-  group: "Cyberware"
+  group: "Gear"
   type: "Exoskeleton"
   quality: "Standard"
   price: "5000"
@@ -2062,7 +2062,7 @@
                  </ul>"
 
 - name: "Linear Frame Σ (Sigma)"
-  group: "Cyberware"
+  group: "Gear"
   type: "Exoskeleton"
   quality: "Standard"
   price: "1000"
@@ -2678,28 +2678,743 @@
                 roll. Beware of false positives and negatives. <strong>Requires a Cyberaudio Suite.</strong>
                 Multiple installations of this option provide user no additional benefit."
 
-
-
-- name: "Neural Link"
+- name: "AudioVox"
   group:  "Cyberware"
-  type: "type"
+  type: "Internal Body"
   quality: "Standard"
   price: "500"
   value: "Expensive"
-  description: "description"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Vocal synthesizer. User adds +2 to their Acting skill and also adds +2 to their Play
+                Instrument Skill while singing. Multiple installations of this option provide user no
+                additional benefit."
 
-- name: "Cyberarm"
+- name: "Contraceptive Implant"
   group:  "Cyberware"
-  type: "type"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "10"
+  value: "Cheap"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "N/A"
+  description: "Implant prevents undesired pregnancy."
+
+- name: "Enhanced Antibodies"
+  group:  "Cyberware"
+  type: "Internal Body"
   quality: "Standard"
   price: "500"
   value: "Expensive"
-  description: "description"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round up)"
+  description: "After stabilization, the user heals a number of Hit Points equal to twice their BODY for
+                each day they spend resting, doing only light activity, and spending the majority of the
+                day taking it easy until returning to full HP, instead of at their typical rate."
 
-- name: "Cyberleg"
+- name: "Cybersnake"
   group:  "Cyberware"
-  type: "type"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "Horrifying throat/esophagus-mounted tentacle weapon.
+                A Very Heavy Melee Weapon (4d6, 1 ROF) that can be successfully concealed without
+                a Check."
+
+- name: "Gills"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "7"
+  humanity_loss_roll: "(3d6)"
+  description: "User can breathe underwater."
+
+- name: "Grafted Muscle and Bone Lace"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "User increases their BODY by 2.
+                This increase in BODY changes a Character's HP and Death Save.
+                Multiple installments stack. This cannot increase the user's BODY to 11 or higher."
+
+- name: "Independent Air Supply"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round up)"
+  description: "Contains 30 minutes of air, before the user needs to refill the tank from the ambient
+                air, which takes an hour. Alternatively, replacing an empty tank with a full one (50eb),
+                takes an Action."
+
+- name: "Midnight Lady™ Sexual Implant"
+  group:  "Cyberware"
+  type: "Internal Body"
   quality: "Standard"
   price: "100"
   value: "Premium"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Be a Venus, be the fire. Be desire."
+
+- name: "Mr. Studd™ Sexual Implant"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "All night, every night. And they'll never know."
+
+- name: "Nasal Filters"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round Up)"
+  description: "User is immune to the effects of toxic gasses, fumes, and all similar dangers that must
+                be inhaled to affect the user.
+                User can deactivate nasal filters, if desired, without an Action."
+
+- name: "Radar/Sonar Implant"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Constantly scans terrain within 50m/yds of user, including underwater, for new threats.
+                Scan does not include anything behind cover, like the contents of a room behind a
+                closed door.
+                User receives a beep from the GM along with the direction of its source whenever a
+                new moving object is detected on the scan.
+                Multiple installations of this option provide user no additional benefit."
+
+- name: "Toxin Binders"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round up)"
+  description: "User adds +2 to their Resist Torture/Drugs Skill.
+                Multiple installations of this option provide user no additional benefit."
+
+- name: "Vampyres"
+  group:  "Cyberware"
+  type: "Internal Body"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "Fangs implanted in the user's mouth.
+                An Excellent Quality Light Melee Weapon (1d6 damage, 2 ROF) that can be successfully
+                concealed without a Check.
+                A Vial of Poison or Biotoxin (purchased separately, see Gear List on pg. 355)
+                can be safely stored and concealed in a compartment in the roof of the mouth near
+                the fangs without a Check. The contents of the stored vial can then be applied to the
+                Vampyres silently anytime without an Action. Each application uses an entire vial and
+                lasts for 30 minutes.
+                Installation of Vampyres includes a complete rework of the user's mouth which prevents
+                the possibility of poisoning yourself accidentally with your fangs halfway through a slice
+                of pizza or due to a bad Check."
+
+- name: "Hidden Holster"
+  group:  "Cyberware"
+  type: "External Body"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Holster inside the user's body can store a weapon already capable of concealment so that
+                it can be successfully concealed without a roll. Weapon can be drawn from the hidden
+                holster without an Action, as long as it is implanted in an easily accessible place on the
+                user's body. You don't want one in your thigh unless you don't wear pants."
+
+- name: "Skin Weave"
+  group:  "Cyberware"
+  type: "External Body"
+  quality: "Standard"
+  price: "500"
+  value: "Premium"
+  install: "Hospital"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "User's body and head are armored at SP7.
+                Your SP in any location is determined by your highest source of SP in that location.
+                Additionally, whenever your armor is ablated in a location, all your sources of SP in that
+                location are ablated at the same time.
+                Whenever the user successfully completes a day of natural healing, nanomachines present
+                in the Skin Weave repair both the body and head location of the Skin Weave for one point
+                of its lost SP."
+
+- name: "Subdermal Armor"
+  group:  "Cyberware"
+  type: "External Body"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "User's body and head are armored at SP11.
+                Your SP in any location is determined by your highest source of SP in that location.
+                Additionally, whenever your armor is ablated in a location, all your sources of SP in that
+                location are ablated at the same time.
+                Whenever the user successfully completes a day of natural healing, nanomachines present in
+                the Subdermal Armor repair both the body and head location of the Subdermal Armor
+                for one point of its lost SP."
+
+- name: "Subdermal Pocket"
+  group:  "Cyberware"
+  type: "External Body"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "2\"x4\" (5cm x 10cm) space with a Realskinn™ zipper.
+                 Contents can be successfully concealed without a Check."
+
+
+- name: "Cyberarm"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Replacement arm. Does not have to be paired. A Cyberarm has 4 Option Slots for
+                Cyberarm or Cyberlimb Options, and each comes pre-installed with a Standard
+                Hand that doesn't cost any Humanity Loss or take up a Cyberarm Option Slot."
+
+- name: "Standard Hand"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round up)"
+  description: "Resembles a normal hand. If installed into a meat arm, a standard hand doesn't
+                count towards the number of pieces of cyberware installed in a meat arm. Doesn't
+                take up a Cyberarm Option Slot."
+
+- name: "Big Knucks"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. Armored knuckles. A Medium Melee Weapon (2d6 damage,
+                2 ROF) that can be successfully concealed without a Check. When wielded as a
+                weapon, user can't hold anything in this arm's hand. <strong>Can be installed as the only
+                piece of Cyberware in a meat arm.</strong>"
+
+- name: "Cyberdeck"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. Cyberdeck permanently installed into the user's Cyberarm. A
+                Cyberdeck must be provided by the user at the time of installation. In addition to
+                never accidentally misplacing your Cyberdeck, integration into a Cyberarm gives any
+                Cyberdeck 1 extra slot that can be used for either Programs or Hardware. This is a
+                permanent upgrade. Attempting to uninstall the Cyberdeck from the Cyberarm
+                breaks it beyond repair, but any Programs or Hardware on it could be easily
+                recovered. <strong>Requires a Cyberarm and takes 3 Option Slots.</strong>
+                Cyberdeck still requires Interface Plugs and Neural Link to be operated by the user."
+
+- name: "Grapple Hand"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. User, as an Action, can fire a rocket propelled grapple that will
+                attach securely to any Thick cover up to 30m/yds away. Line can only support two
+                times the user's body weight, and has 10 HP.
+                The user negates the normal movement penalty for climbing when they climb this
+                line, and can retract the line without an Action, including as they climb. When used
+                as a grapple, user can't hold anything in this arm's hand. Ineffective as a weapon
+                and cannot be used to make the Grab Action. <strong>Requires a Cyberarm.</strong>"
+
+- name: "Medscanner"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. Scanner with external probes and contacts diagnoses injury and
+                illness, assisting user in medical emergencies not requiring the Surgery Skill. User
+                adds +2 to their First Aid and Paramedic Skills. <strong>Requires a Cyberarm and takes
+                2 Option Slots.</strong>
+                Multiple installations of this option provide user no additional benefit."
+
+- name: "Popup Grenade Launcher"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. A One-Handed Grenade Launcher with only a single grenade in its
+                magazine that is incompatible with all Weapon Attachments except Smartgun Link is
+                installed into the Cyberarm. Launcher can be successfully concealed without a Check
+                and can be drawn and stowed without an Action. While the weapon is \"popped up,
+                 the user can't hold anything in this arm's hand. <strong>Requires a Cyberarm and takes
+                 2 Option Slots.</strong>"
+
+- name: "Popup Melee Weapon"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option A One-Handed Light, Medium, or Heavy Melee Weapon (that need
+                not be concealable before its installation) is installed in a Cyberarm so that it can
+                be successfully concealed without a roll, and can be drawn and stowed without an
+                Action. While the weapon is \"popped up,\" the user can't hold anything in this arm's
+                 hand. <strong>Requires a Cyberarm and takes 2 Option Slots.</strong>"
+
+- name: "Popup Shield"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. A Bulletproof Shield which is concealed while it is folded inside the
+                Cyberarm. It can be drawn or stowed without an Action, provided that the shield has
+                more than 0 HP. When extended, you can't use the Cyberarm to do anything else
+                other than serve as a shield, and you can’t hold anything in that Cyberarm's hand
+                other than the shield. The Bulletproof Shield installed inside your Cyberarm is easily
+                removable and replaceable with another Bulletproof Shield, for ease of cleaning and
+                repair. <strong>Requires a Cyberarm and takes 3 Option Slots.</strong> See Using Shields in the
+                Combat Section on pg. 183."
+
+- name: "Popup Ranged Weapon"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. A One-Handed Ranged Weapon (that need not be concealable
+                before its installation) provided by the user is permanently installed into the
+                Cyberarm (along with any weapon attachments attached to it) so that it can be
+                successfully concealed without a Check, and can be drawn and stowed without an
+                Action. While the weapon is “popped up,” the user can't hold anything in this arm's
+                hand. <strong>Requires a Cyberarm and takes 2 Option Slots.</strong>"
+
+- name: "Quick Change Mount"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. Cyberarm can be installed in an open socket or uninstalled with
+                an Action. The first time you install a brand new Cyberarm, whether using a Quick
+                Change Mount or otherwise, you always accrue Humanity Loss. Reattaching one
+                you've already used before with a Quick Change Mount does not do this. <strong>Requires
+                a Cyberarm.</strong>"
+
+- name: "Rippers"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. Extendable Carbo-glass fingernails. A Medium Melee Weapon (2d6
+                damage, 2 ROF) that can be successfully concealed without a Check. When wielded
+                as a weapon, user can't hold anything in this arm's hand. <strong>Can be installed as the
+                only piece of Cyberware in a meat arm.</strong>"
+
+- name: "Scratchers"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
   description: "description"
+
+- name: "Name"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round up)"
+  description: "Cyberarm Option. Carbo-glass artificial fingernails that cut on a diagonal slice. A
+                Light Melee Weapon (1d6 damage, 2 ROF) that can be successfully concealed without
+                a Check. When wielded as a weapon, user can't hold anything in this arm's hand.
+                <strong>Can be installed as the only piece of Cyberware in a meat arm.</strong>"
+
+- name: "Shoulder Cam"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. Camera in a popup in the user's shoulder that tracks independently
+                of the user and records video and audio to an onboard Memory Chip or a linked
+                Agent. Camera can be successfully concealed without a Check and can be drawn and
+                stowed without an Action. Requires a Cyberarm and takes 2 Option Slots."
+
+- name: "Slice ‘N Dice"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. Monofilament whip implanted in the user's thumb. A Medium
+                Melee Weapon (2d6 damage, 2 ROF) that can be successfully concealed without a
+                Check. When wielded as a weapon, user can't hold anything in this arm's hand.
+                <strong>Can be installed as the only piece of Cyberware in a meat arm.</strong>"
+
+- name: "Subdermal Grip"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. Neuralware Option. Subdermal plate under the palm allows user
+                to make use of Smartguns. A cost-effective alternative to Interface Plugs. <strong>Can be
+                installed as the only piece of Cyberware in a meat arm. Requires Neural
+                Link and takes up a Neuralware Option Slot.</strong>"
+
+- name: "Techscanner"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. Scanner diagnoses a wide variety of machinery and electronics,
+                assisting the user in repairs or other technical work. User adds +2 to their Basic
+                Tech, Cybertech, Land Vehicle Tech, Sea Vehicle Tech, Air Vehicle Tech, Electronics/
+                Security Tech, and Weaponstech Skills. <strong>Requires a Cyberarm and takes 2 Option
+                Slots.</strong> Multiple installations of this option provide user no additional benefit."
+
+- name: "Tool Hand"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberarm Option. Fingers contain screwdriver, wrench, small drill, etc. Never be
+                without your Techtool! <strong>Can be installed as the only piece of Cyberware in a
+                meat arm.</strong>"
+
+- name: "Wolvers"
+  group:  "Cyberware"
+  type: "Cyberarm"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "7"
+  humanity_loss_roll: "(2d6)"
+  description: "Cyberarm Option. Extendable Carbo-glass claws in the knuckles. A Heavy Melee
+                Weapon (3d6 damage, 2 ROF) that can be successfully concealed without a Check.
+                When wielded as a weapon, user can't hold anything in this arm's hand. <strong>Can be
+                installed as the only piece of Cyberware in a meat arm.</strong>"
+
+- name: "Cyberleg"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Hospital"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Replacement leg. Does not have to be paired. A Cyberleg has 3 Option Slots for
+                Cyberleg or Cyberlimb Options and each comes pre-installed with a Standard
+                Foot that doesn't cost any Humanity Loss or take up a Cyberleg Option Slot.
+                Most Cyberleg options must be paired to work properly (purchased twice and
+                installed in two different Cyberlegs on a user. Humanity Loss is calculated separately
+                for each purchase)."
+
+- name: "Standard Foot"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Clinic"
+  humanity_loss: "2"
+  humanity_loss_roll: "(1d6/2 Round up)"
+  description: "Resembles a normal foot. If installed into a meat leg, a Standard Foot doesn't count
+                towards the number of pieces of cyberware installed in a meat leg. <strong>Doesn't take
+                up a Cyberleg Option Slot.</strong>"
+
+- name: "Grip Foot"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberleg Option. Feet are coated with state-of-the-art traction material. The user
+                negates the normal movement penalty for climbing. <strong>Requires two Cyberlegs and
+                must be paired.</strong>"
+
+- name: "Jump Booster"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Hydraulics in legs. Negates movement penalty when jumping.
+                <strong>Requires two Cyberlegs, takes up 2 Option Slots, and must be paired.</strong>"
+
+- name: "Skate Foot"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Inline skates built into feet. Can be concealed. Increases movement by 6m/yds
+                when using Run Action. <strong>Requires two Cyberlegs and must be paired.</strong>"
+
+- name: "Talon Foot"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Blade mounted in foot. Light Melee Weapon. Can be concealed without a Check.
+                <strong>Can be installed as the only piece of Cyberware in a meat leg.</strong>"
+
+- name: "Web Foot"
+  group:  "Cyberware"
+  type: "Cyberleg"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Thin webbing between toes. Negates movement penalty when swimming. <strong>Requires
+                Two Cyberlegs and must be paired.</strong>"
+
+
+- name: "Hardened Shielding"
+  group:  "Cyberware"
+  type: "Cyberlimb option"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Clinic"
+  humanity_loss: "3"
+  humanity_loss_roll: "(1d6)"
+  description: "Cyberlimb Option. Cyberlimb and installed options cannot be rendered inoperable
+                by EMP effects, like Microwaver pulses, or Non-Black ICE Program effects. <strong>Requires
+                Cyberarm or Cyberleg.</strong>"
+
+- name: "Plastic Covering"
+  group:  "Cyberware"
+  type: "Cyberlimb option"
+  quality: "Standard"
+  price: "100"
+  value: "Premium"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "N/A"
+  description: "Cyberlimb Option. Plastic coating for Cyberlimb. Available in wide variety of colors
+                and patterns. <strong>Requires a Cyberarm or Cyberleg but does not take an Option
+                Slot.</strong>"
+
+- name: "Realskinn™ Covering"
+  group:  "Cyberware"
+  type: "Cyberlimb option"
+  quality: "Standard"
+  price: "500"
+  value: "Expensive"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "N/A"
+  description: "Cyberlimb Option. Artificial skin coating for Cyberlimb.
+                <strong>Requires a Cyberarm or Cyberleg but does not take an Option Slot.</strong>"
+
+- name: "Superchrome® Covering"
+  group:  "Cyberware"
+  type: "Cyberlimb option"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Mall"
+  humanity_loss: "0"
+  humanity_loss_roll: "N/A"
+  description: "Cyberlimb Option. Shiny metallic coating for Cyberlimb. +2 to Wardrobe and Style.
+                This bonus only applies once. <strong>Requires a Cyberarm or Cyberleg but does not
+                take an Option Slot.</strong>"
+
+- name: "Artificial Shoulder Mount"
+  group:  "Cyberware"
+  type: "Borgware"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "User can mount 2 Cyberarms under first set of arms. User can only have one Artificial
+                Shoulder Mount installed."
+
+- name: "Implanted Linear Frame Σ (Sigma)"
+  group:  "Cyberware"
+  type: "Borgware"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "0"
+  humanity_loss_roll: "N/A"
+  description: "An enhanced skeleton and support structure with hydraulic and myomar muscles.
+                <ul class=\"bullet-list\">
+                <li>User increases their BODY to 12.</li>
+                <li>This increase in BODY changes a Character's HP and Death Save.</li>
+                <li>This cannot increase the user's BODY to 13 or higher.</li>
+                <li><strong>Installation requires BODY 6 and Grafted Muscle and Bone Lace.</strong></li>
+                </ul>"
+
+- name: "Implanted Linear Frame ß (Beta)"
+  group:  "Cyberware"
+  type: "Borgware"
+  quality: "Standard"
+  price: "5000"
+  value: "Luxury"
+  install: "Hospital"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "A heavily enhanced skeleton and support structure with even more hydraulic and myomar
+                muscles.
+                <ul class=\"bullet-list\">
+                <li>User increases their BODY to 14.</li>
+                <li>This increase in BODY changes a Character's HP and Death Save.</li>
+                <li>This cannot increase the user's BODY to 15 or higher.</li>
+                <li>Installation requires BODY 8 and Two Grafted Muscle and Bone Lace.</li>
+                </ul>"
+
+- name: "MultiOptic Mount"
+  group:  "Cyberware"
+  type: "Borgware"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Hospital"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "User can mount up to 5 additional Cybereyes into the MultiOptic Mount. <strong>Cybereyes sold
+                and installed separately.</strong> User can only have one MultiOptic Mount installed."
+
+- name: "Sensor Array"
+  group:  "Cyberware"
+  type: "Borgware"
+  quality: "Standard"
+  price: "1000"
+  value: "V. Expensive"
+  install: "Clinic"
+  humanity_loss: "14"
+  humanity_loss_roll: "(4d6)"
+  description: "Twin flattened antennae protruding from the user's head improving their Cyberaudio Suite,
+                sometimes referred to as \"Rabbit Ears.\" User can install up to 5 additional Cyberaudio
+                 Options into their Cyberaudio Suite.
+                 User can only have one Sensor Array installed. <strong>Requires Cyberaudio Suite but doesn't
+                 take up a Cyberaudio Option Slot.</strong>"
