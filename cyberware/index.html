@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cyberware</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Cyberware</h1>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th width="50%">Name</th>
+        <th>Install</th>
+        <th>Humanity Loss</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Borgware</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/artificial-shoulder-mount-standard.html">Artificial Shoulder Mount</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/implanted-linear-frame--beta-standard.html">Implanted Linear Frame ß (Beta)</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">5000eb<br><small>(Luxury)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/implanted-linear-frame--sigma-standard.html">Implanted Linear Frame Σ (Sigma)</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">0<br><small>N/A</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/multioptic-mount-standard.html">MultiOptic Mount</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/sensor-array-standard.html">Sensor Array</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Cyberarm</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/big-knucks-standard.html">Big Knucks</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/cyberarm-standard.html">Cyberarm</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/cyberdeck-standard.html">Cyberdeck</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/grapple-hand-standard.html">Grapple Hand</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/medscanner-standard.html">Medscanner</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/name-standard.html">Name</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/popup-grenade-launcher-standard.html">Popup Grenade Launcher</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/popup-melee-weapon-standard.html">Popup Melee Weapon</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/popup-ranged-weapon-standard.html">Popup Ranged Weapon</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/popup-shield-standard.html">Popup Shield</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/quick-change-mount-standard.html">Quick Change Mount</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/rippers-standard.html">Rippers</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/scratchers-standard.html">Scratchers</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/shoulder-cam-standard.html">Shoulder Cam</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/slice-n-dice-standard.html">Slice ‘N Dice</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/standard-hand-standard.html">Standard Hand</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/subdermal-grip-standard.html">Subdermal Grip</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/techscanner-standard.html">Techscanner</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/tool-hand-standard.html">Tool Hand</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/wolvers-standard.html">Wolvers</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Cyberaudio</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/amplified-hearing-standard.html">Amplified Hearing</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/audio-recorder-standard.html">Audio Recorder</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/bug-detector-standard.html">Bug Detector</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/cyberaudio-suite-standard.html">Cyberaudio Suite</a></td>
+        <td class="center middle">Clinc</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/homing-tracer-standard.html">Homing Tracer</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/internal-agent-standard.html">Internal Agent</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/level-damper-standard.html">Level Damper</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/radar-detector-standard.html">Radar Detector</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/radio-communicator-standard.html">Radio Communicator</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/radio-scannermusic-player-standard.html">Radio Scanner/Music Player</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">50eb<br><small>(Costly)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/scrambler-descrambler-standard.html">Scrambler Descrambler</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/voice-stress-analyzer-standard.html">Voice Stress Analyzer</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Cyberleg</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/cyberleg-standard.html">Cyberleg</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/grip-foot-standard.html">Grip Foot</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/jump-booster-standard.html">Jump Booster</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/skate-foot-standard.html">Skate Foot</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/standard-foot-standard.html">Standard Foot</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/talon-foot-standard.html">Talon Foot</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/web-foot-standard.html">Web Foot</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Cyberlimb option</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/hardened-shielding-standard.html">Hardened Shielding</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/plastic-covering-standard.html">Plastic Covering</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>N/A</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/realskinn-covering-standard.html">Realskinn™ Covering</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>N/A</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/superchrome-covering-standard.html">Superchrome® Covering</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>N/A</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Cyberoptics</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/anti-dazzle-standard.html">Anti-Dazzle</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/chyron-standard.html">Chyron</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/color-shift-standard.html">Color Shift</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/cybereye-standard.html">Cybereye</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/dartgun-standard.html">Dartgun</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/image-enhance-standard.html">Image Enhance</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/low-lightinfrareduv-standard.html">Low Light/Infrared/UV</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/microoptics-standard.html">MicroOptics</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/microvideo-standard.html">MicroVideo</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/radiation-detector-standard.html">Radiation Detector</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/targeting-scope-standard.html">Targeting Scope</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/teleoptics-standard.html">TeleOptics</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/virtuality-standard.html">Virtuality</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>External Body</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/hidden-holster-standard.html">Hidden Holster</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/skin-weave-standard.html">Skin Weave</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/subdermal-armor-standard.html">Subdermal Armor</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/subdermal-pocket-standard.html">Subdermal Pocket</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Fashionware</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/biomonitor-standard.html">Biomonitor</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/chemskin-standard.html">Chemskin</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/emp-threading-standard.html">EMP Threading</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">10eb<br><small>(Cheap)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/light-tattoo-standard.html">Light Tattoo</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/shift-tacts-standard.html">Shift Tacts</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/skinwatch-standard.html">Skinwatch</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/techhair-standard.html">Techhair</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Internal Body</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/audiovox-standard.html">AudioVox</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/contraceptive-implant-standard.html">Contraceptive Implant</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">0<br><small>N/A</small></td>
+        <td class="center middle">10eb<br><small>(Cheap)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/cybersnake-standard.html">Cybersnake</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/enhanced-antibodies-standard.html">Enhanced Antibodies</a></td>
+        <td class="center middle">Mall</td>
+        <td class="center middle">2<br><small>(1d6/2 Round up)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/gills-standard.html">Gills</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">7<br><small>(3d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/grafted-muscle-and-bone-lace-standard.html">Grafted Muscle and Bone Lace</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/independent-air-supply-standard.html">Independent Air Supply</a></td>
+        <td class="center middle">Hospital</td>
+        <td class="center middle">2<br><small>(1d6/2 Round up)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/midnight-lady-sexual-implant-standard.html">Midnight Lady™ Sexual Implant</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/mr.-studd-sexual-implant-standard.html">Mr. Studd™ Sexual Implant</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/nasal-filters-standard.html">Nasal Filters</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round Up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/radarsonar-implant-standard.html">Radar/Sonar Implant</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/toxin-binders-standard.html">Toxin Binders</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">2<br><small>(1d6/2 Round up)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/vampyres-standard.html">Vampyres</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    
+    <tr class="grouping"><td colspan="4"><strong>Neuralware</strong></td></tr>
+    
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/braindance-recorder-standard.html">Braindance Recorder</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/chemical-analyzer-standard.html">Chemical Analyzer</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">3<br><small>(1d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/chipware-socket-standard.html">Chipware Socket</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/interface-plugs-standard.html">Interface Plugs</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/kerenzikov-standard.html">Kerenzikov</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/memory-chip-standard.html">Memory Chip</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">0<br><small>(N/A)</small></td>
+        <td class="center middle">10eb<br><small>(Cheap)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/neural-link-standard.html">Neural Link</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/olfactory-boost-standard.html">Olfactory Boost</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/pain-editor-standard.html">Pain Editor</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">14<br><small>(4d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/sandevistan-standard.html">Sandevistan</a></td>
+        <td class="center middle">Clinic</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/skill-chip-standard.html">Skill Chip</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">500eb<br><small>(Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/skill-chip-x2-standard.html">Skill Chip x2</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+    </tr>
+    
+    <tr>
+        <td class="left middle quality_standard"><a href="/RED-Repo/items/tactile-boost-standard.html">Tactile Boost</a></td>
+        <td class="center middle">N/A</td>
+        <td class="center middle">7<br><small>(2d6)</small></td>
+        <td class="center middle">100eb<br><small>(Premium)</small></td>
+    </tr>
+    
+    
+    </tbody>
+</table>
+
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>

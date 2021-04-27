@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Melee Combat</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Melee Combat</h1>
+<br>
+<div class="resolution center">
+    <h3>Melee Combat Resolution:</h3>
+    <div>Attacker's DEX + Relevant Melee Skill + 1d10</div>
+    <div class="versus">versus</div>
+    <div>Defender's DEX + Evasion Skill + 1d10</div>
+</div>
+<br>
+<p>With the exception of Very Heavy Melee Weapons, all Melee combat is 2 ROF, allowing for 2 strikes to be
+    made with every Attack Action. <strong>Targets must be in your reach (2m/yards).</strong></p>
+
+<p>If you beat the DV (Defender wins in a tie) you damage the Defender.</p>
+    <p>The Defender's armor will reduce the damage you do, as
+    detailed later in this section on pg. 186.</p>
+
+<br>
+<h3>Brawling, Boxing, and Grappling</h3>
+<p>Brawling uses the <strong>Brawling Skill</strong> to attack, and the damage dealt with each blow scales with the attacker's
+    BODY STAT. Brawling is also the Skill used for initiating and defending
+    against a Grapple. <strong>When dealing damage, a Brawling attack does not ignore half the Defender's
+        armor</strong>.</p>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Body:</th>
+        <th>1-4</th>
+        <th>5-6*</th>
+        <th>7-10</th>
+        <th>11+</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>Damage</strong></td>
+        <td class="center">1d6</td>
+        <td class="center">2d6</td>
+        <td class="center">3d6</td>
+        <td class="center">4d6</td>
+    </tr>
+    </tbody>
+</table>
+<p><em>* If you have a cyberarm your damage is at least at this level.</em></p>
+<BR><BR>
+
+
+
+<h3>Other Melee Combat Options:</h3>
+<ul>
+    <li><a href="/RED-Repo/actions/grab/">Grab</a></li>
+    <li><a href="/RED-Repo/actions/choke/">Choke</a></li>
+    <li><a href="/RED-Repo/actions/throw/">Throw</a></li>
+</ul>
+<BR><BR>
+<h2>Martial Arts</h2>
+
+<p>Martial arts uses the Martial Arts Skill to make Martial Arts Attacks and perform Martial Arts Special Moves.
+    Martial Arts Attacks are made at 2 ROF. You can't use Martial Arts Attacks unless you have at least one point
+    in the Skill.</p>
+
+<h3>Marital Arts Damage</h3>
+<p><strong>When dealing damage, Martial Arts Attacks ignore half of the Defender's armor.</strong> Round up.
+    You deal damage based on your BODY.</p>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Body:</th>
+        <th>1-4</th>
+        <th>5-6</th>
+        <th>7-10</th>
+        <th>11+</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>Damage</strong></td>
+        <td class="center">1d6</td>
+        <td class="center">2d6</td>
+        <td class="center">3d6</td>
+        <td class="center">4d6</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="resolution center">
+    <h3>Martial Arts Combat Resolution:</h3>
+    <div>Attacker's DEX + Form's Skill + 1d10</div>
+    <div class="versus">versus</div>
+    <div>Defender's DEX + Evasion Skill + 1d10</div>
+</div>
+<br>
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ranged Combat</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Ranged Combat</h1>
+<div class="resolution center">
+    <h3>Ranged Combat Resolution:</h3>
+    <div>Attacker's REF + Relevant Weapon Skill + 1d10</div>
+    <div class="versus">versus</div>
+    <div>Defender's DV*<br> or <br> Defender's DEX + Evasion Skill + 1d10**</div>
+</div>
+
+<p><small><em>* Determined by Range to Target and Weapon</em></small></p>
+<p><small><em>** A Defender with a REF 8 or higher can choose to attempt to dodge a Ranged Attack instead of using the range table to determine the DV</em></small></p>
+
+<p>If you beat the DV (Defender wins in a tie) you damage the Defender.</p>
+    <p>The Defender's armor will reduce the damage you do, as
+    detailed later in this section on pg. 186.</p>
+
+<br>
+<h3>Single Shot DVs Based on Range</h3>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th class="center middle" rowspan="2">Weapon Type</th>
+        <th colspan="8">Range in meters/yards</th>
+    </tr>
+    <tr>
+        <th>0-6</th>
+        <th>7-12</th>
+        <th>13-25</th>
+        <th>26-50</th>
+        <th>51-100</th>
+        <th>101-200</th>
+        <th>201-400</th>
+        <th>401-800</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Pistol</td><td class="center">13</td><td class="center">15</td><td class="center">20</td><td class="center">25</td><td class="center">30</td><td class="center">30</td><td class="center na">N/A</td><td class="center na">N/A</td>
+    </tr>
+    <tr>
+        <td>SMG</td><td class="center">15</td><td class="center">13</td><td class="center">15</td><td class="center">20</td><td class="center">25</td><td class="center">25</td><td class="center">30</td><td class="center na">N/A</td>
+    </tr>
+    <tr>
+        <td>Shotgun (Slug)</td><td class="center">13</td><td class="center">15</td><td class="center">20</td><td class="center">25</td><td class="center">30</td><td class="center">35</td><td class="center na">N/A</td><td class="center na">N/A</td>
+    </tr>
+    <tr>
+        <td>Assault Rifle</td><td class="center">17</td><td class="center">16</td><td class="center">15</td><td class="center">13</td><td class="center">15</td><td class="center">20</td><td class="center">25</td><td class="center">30</td>
+    </tr>
+    <tr>
+        <td>Sniper Rifle</td><td class="center">30</td><td class="center">25</td><td class="center">25</td><td class="center">20</td><td class="center">15</td><td class="center">16</td><td class="center">17</td><td class="center">20</td>
+    </tr>
+    <tr>
+        <td>Bows & Crossbow</td><td class="center">15</td><td class="center">13</td><td class="center">15</td><td class="center">17</td><td class="center">20</td><td class="center">22</td><td class="center na">N/A</td><td class="center na">N/A</td>
+    </tr>
+    <tr>
+        <td>Grenade Launcher</td><td class="center">16</td><td class="center">15</td><td class="center">15</td><td class="center">17</td><td class="center">20</td><td class="center">22</td><td class="center">25</td><td class="center na">N/A</td>
+    </tr>
+    <tr>
+        <td>Rocket Launcher</td><td class="center">17</td><td class="center">16</td><td class="center">15</td><td class="center">15</td><td class="center">20</td><td class="center">20</td><td class="center">25</td><td class="center">30</td>
+    </tr>
+    </tbody>
+</table>
+<BR><BR>
+<h2>Alt Fire Modes & Features</h2>
+<h3>Autofire</h3>
+
+<p>When you use Autofire, it costs an Action and 10 bullets. <strong>If you don't have 10
+    bullets remaining in your clip, you can't use Autofire.</strong> You use the <strong>Autofire
+    Skill</strong> instead of the weapon's typical Weapon Skill. Additionally, instead of the weapon's
+    entry on the Range Table, you use its entry on the Autofire Range Table. <strong>Autofire
+        cannot be used to make an Aimed Shot.</strong></p>
+
+<p>Targets with REF 8 or Higher can still choose to attempt to dodge your Autofire.</p>
+<p><strong>If you hit, roll 2d6 for damage, and multiply it by the amount you beat
+    the DV to hit your target, up to a maximum denoted by the weapon's
+    Autofire (3 for SMGS, 4 for Assault Rifles).</strong> This number is the amount of damage
+    that Autofire dealt. If both dice came up 6, you've also inflicted a Critical Injury (see
+    pg. 187)! The Defender's armor reduces the damage you do, as detailed later in this
+    section on pg. 186.</p>
+
+<h3>Autofire DVs Based on Range</h3>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th rowspan="2">Weapon Type</th>
+        <th colspan="5">Range in meters/yards</th>
+    <tr>
+        <th>0-6</th>
+        <th>7-12</th>
+        <th>13-25</th>
+        <th>26-50</th>
+        <th>51-100</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>SMG</td><td class="center">20</td><td class="center">17</td><td class="center">20</td><td class="center">25</td><td class="center">30</td>
+    </tr>
+    <tr>
+        <td>Assault Rifle</td><td class="center">22</td><td class="center">20</td><td class="center">17</td><td class="center">20</td><td class="center">25</td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Arrows</h3>
+<p>Bows and Crossbows fire Arrows. Because
+    loading an Arrow is part of attacking with a Bow
+    or Crossbow, <strong>you never need to Reload a
+        Bow or Crossbow using the Reload Action.</strong>
+    Additionally, <strong>Basic Arrows</strong> can always be retrieved
+    after they are fired, making buying basic ammunition
+    for these weapons almost a one-time investment.</p>
+
+<h3>Suppressive Fire</h3>
+
+<p>When you use Suppressive Fire, it costs an Action and
+    10 Bullets. <strong>If you don't have 10 Bullets remaining
+        in your clip, you can't use Suppressive
+        Fire.</strong></p>
+
+<p>Everyone on foot within 25 m/yds, out of cover, and
+    in your line of sight must roll <strong>WILL + Concentration
+        + 1d10</strong> against your <strong>REF + Autofire Skill + 1d10.</strong></p>
+
+<p>Anyone that fails must use their next Move Action to
+    get into cover. If that Move Action would be insufficient
+    to get into cover, they must also use the Run Action to
+    get into cover or as close to cover as possible.</p>
+
+<h3>Shotgun Shells</h3>
+
+<p>In addition to Slugs, Shotguns can also fire Shotgun
+    Shells. You can't make an Aimed Shot with a Shotgun
+    Shell. When you fire a Shotgun Shell, you make 1
+    Ranged Attack (REF + Shoulder Arms + 1d10) vs. a
+    DV13. If successful every target in front of you, within
+    6m/yds (3 squares), that you can see, takes 3d6
+    damage if you hit. You roll damage once for all targets.
+    The Defender's armor will reduce the damage you do,
+    as detailed later in this section on pg. 186.</p>
+
+<p>Individual targets with REF 8 or Higher can still
+    choose to attempt to dodge your Shotgun Shell.</p>
+
+<h3>Explosives</h3>
+
+<p>All explosives weapons <strong>deal their damage to all
+    targets (including the terrain) in a 10m/yd
+    by 10m/yd area (5 Square by 5 Square)</strong>, the
+    center of which is your intended target (which is a 2m/
+    yd by 2m/yd square, not an individual). You only
+    roll damage once for all targets.</p>
+
+<p>If you roll under the DV required to hit your intended
+    target, the GM decides where in that 10m/yard by
+    10m/yard square centered on your intended target
+    the explosive actually landed, and it instead damages
+    a 10m/yard by 10m/yard square around that point.</p>
+
+<p>Anyone with REF 8 or higher can choose to individually
+    dodge the blast by rolling higher than your
+    original Check, placing themselves outside of the blast
+    area if they succeed.</p>
+
+<p>An explosive blast will not damage a target behind
+    cover that its damage would be insufficient to destroy.
+    However, if the damage from the explosive would be
+    sufficient to destroy the cover, the individual is no
+    longer behind cover and they take full damage.</p>
+
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>

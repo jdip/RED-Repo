@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>skills</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Skills</h1>
+<BR>
+<div class="resolution center">
+    <h3>Skill check Resolution:</h3>
+    <div>STAT + Skill + 1d10</div>
+    <div class="versus">versus</div>
+    <div>Difficulty Value</div>
+</div>
+
+<BR>
+<h3>Difficulty Values</h3>
+<table class="rowshades">
+    <thead>
+        <tr>
+            <th>Difficulty</th>
+            <th>Description</th>
+            <th>DV</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td class="center">Simple</td><td>This is something most people can do without thinking, but which might be hard for a small child.</td><td class="center">9</td></tr>
+        <tr><td class="center">Everyday</td><td>This feat is something most people can do without a lot of special training.</td><td class="center">13</td></tr>
+        <tr><td class="center">Difficult</td><td>This feat is difficult to accomplish without training or natural talent.</td><td class="center">15</td></tr>
+        <tr><td class="center">Professional</td><td>This feat takes actual training and the user can be considered to be a professional, skilled in their abilities.</td><td class="center">17</td></tr>
+        <tr><td class="center">Heroic</td><td>This is a highly skilled feat; one that only the best of the best can pull off. This is the level of sports stars and other highly regarded superstars.</td><td class="center">21</td></tr>
+        <tr><td class="center">Incredible</td><td>This is a tremendous feat. Pulling this off would rate you among the very best of your class professionally. You are of truly Olympian mettle.</td><td class="center">24</td></tr>
+        <tr><td class="center">Legendary</td><td>An awe-inspiring feat. This is something people write stories about; a truly amazing accomplishment that will be spoken of in hushed tones for years to come.</td><td class="center">29</td></tr>
+    </tbody>
+</table>
+
+<BR>
+<BR>
+<h3>Negative Modifier Examples</h3>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Condition</th>
+        <th>Mod Value</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr><td>Night or low lighting conditions</td><td class="center">-1</td></tr>
+        <tr><td>Have never done this before</td><td class="center">-1</td></tr>
+        <tr><td>Complex task</td><td class="center">-2</td></tr>
+        <tr><td>Don't have right tools or parts</td><td class="center">-2</td></tr>
+        <tr><td>Slept uncomfortable the night before.</td><td class="center">-2</td></tr>
+        <tr><td>Under extreme stress</td><td class="center">-2</td></tr>
+        <tr><td>Exhausted</td><td class="center">-4</td></tr>
+        <tr><td>Extremely drunk or sedated</td><td class="center">-4</td></tr>
+        <tr><td>Trying to perform task secretly</td><td class="center">-4</td></tr>
+        <tr><td>Task obscured by smoke, darkness</td><td class="center">-4</td></tr>
+    </tbody>
+</table>
+<BR>
+<BR>
+<h3>Skills</h3>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Skill</th>
+        <th>Stat</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+        
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Awareness</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/concentration/" title="Skill of focus and mental control, encompassing feats of memory, recall, and physiological control."> Concentration</a>
+                </td>
+                <td class="center" width="60">
+                    WILL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/tracking/" title="Skill of following a trail by observing tracks and other clues left behind."> Tracking</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/lip-reading/" title="Skill of reading someone's lips to tell what they're saying."> Lip Reading</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/perception/" title="Skill of spotting hidden things, like clues, traps, and people using the Stealth Skill, but not objects hidden with the Conceal/Reveal Object Skill."> Perception</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/conceal-reveal-object/" title="Skill for hiding objects and finding objects that have been hidden. This is the Skill used for concealing weapons under clothing and detecting concealed weapons."> Conceal/Reveal Object</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Body</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/athletics/" title="Skill of jumping, climbing, throwing, swimming, lifting weights, etc. It combines the basic elements of any high school-level sports program. This Skill also covers thrown weapons."> Athletics</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/stealth/" title="Skill of moving quietly, hiding, doing an action discreetly, or otherwise evading detection. Other Characters can try to find you with their Perception Skill."> Stealth</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/endurance/" title="Skill of withstanding harsh environmental conditions and hardship. This is also the ability to withstand pain or discomfort, particularly over long periods of time, by knowing the best ways to conserve strength and energy. Endurance Skill Checks are made whenever a Character must continue to be active after a long period without food, sleep, or water or after prologed activity."> Endurance</a>
+                </td>
+                <td class="center" width="60">
+                    WILL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/resist-torture-drugs/" title="Skill of resisting painful effects, including interrogation, torture, and drugs."> Resist Torture/Drugs</a>
+                </td>
+                <td class="center" width="60">
+                    WILL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/dance/" title="Skill of dancing at a professional level."> Dance</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/contortionist/" title="Skill of manipulating your body to get out of handcuffs or other bindings and to fit yourself into otherwise inaccessible places or spaces."> Contortionist</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Control</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/pilot-sea-vehicle/" title="Skill of piloting and maneuvering sea vehicles."> Pilot Sea Vehicle</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/pilot-air-vehicle/" title="Skill of piloting and maneuvering air vehicles."> Pilot Air Vehicle (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/drive-land-vehicle/" title="Skill of driving and maneuvering land vehicles."> Drive Land Vehicle</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/riding/" title="Skill of riding a living creature trained for the purpose."> Riding</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Education</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/accounting/" title="Skill of balancing books, creating false books, and identifying them, juggling numbers, creating budgets and handling day-to-day business operations."> Accounting</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/gamble/" title="Skill of knowing how to figure odds and play games of chance successfully."> Gamble</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/criminology/" title="Skill of discovering clues by dusting for fingerprints, doing ballistic tests, examining evidence, and searching through police records and files."> Criminology</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/cryptography/" title="Skill of encrypting and decoding messages."> Cryptography</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/composition/" title="The required Skill for writing songs, articles, or stories."> Composition</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/business/" title="Skill regarding knowledge of basic business practices, laws of supply and demand, employee management, procurement, sales, and marketing."> Business</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/deduction/" title="Skill of taking several clues and leaping to a non-obvious conclusion or medical diagnosis."> Deduction</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/bureaucracy/" title="Skill for dealing with bureaucrats, cutting red tape, knowing who to talk to in a bureaucracy, how to reach them, and how to extract information from bureaucracies."> Bureaucracy</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/science/" title="Skill for knowing how to design experiments, write scientific papers, test hypotheses, and discuss with other academics in a particular field of science. An area of study must be specified whenever this Skill is increased. Possible options include: Geology, Mathematics, Physics, Zoology, Anthropology, Biology, Chemistry, and History."> Science</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/education/" title="Skill of general knowledge, equivalent to a basic school education, allowing you to know how to read, write, use basic math, and know enough history to get by."> Education</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/local-expert/" title="Skill of knowing a specific area well and knowing the agendas of its various factions, both political and criminal. You must choose a specific location whenever you increase this Skill, which cannot be any larger than a single neighborhood or community."> Local Expert</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/animal-handling/" title="Skill of handling, training, and caring for animals."> Animal Handling</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/tactics/" title="Skill of managing a large-scale battle effectively and efficiently. A Character with this Skill usually knows what must be done to direct a battle, and how an enemy force may react."> Tactics</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/library-search/" title="Skill of using databases, the Data Pool, libraries, and other compiled information sources to find facts."> Library Search</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/language/" title="Skill of speaking a particular language. You must choose a specific language whenever you increase this Skill."> Language</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/wilderness-survival/" title="Skill for knowing how to survive comfortably in the wilderness. This knowledge includes how to set traps, forage for wood, track game, build shelters, and make fires."> Wilderness Survival</a>
+                </td>
+                <td class="center" width="60">
+                    INT
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Fighting</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/martial-arts/" title="Skill for fighting with a Martial Arts Form. Each time you increase this Skill you must choose in which form you are training. You can learn multiple forms, but you must do so separately. Possible options: Karate, Taekwondo, Judo, Aikido."> Martial Arts (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/brawling/" title="Skill at fighting and grappling with brute strength."> Brawling</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/evasion/" title="Skill for getting out of the way of someone attacking you in melee. A Character with REF 8 or higher can also use this Skill to dodge Ranged Attacks and Explosions."> Evasion</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/melee-weapon/" title="Skill for fighting with melee weapons."> Melee Weapon</a>
+                </td>
+                <td class="center" width="60">
+                    DEX
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Performance</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/acting/" title="Skill of assuming a role, disguising yourself as someone else, whether real or fictitious, and faking emotions and moods."> Acting</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/play-instrument/" title="Skill of professionally playing a musical instrument. You can choose which instrument when you increase this Skill. Possible options include singing, guitar, drums, violin, piano, etc."> Play Instrument</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Ranged Weapon</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/handgun/" title="Skill for accurately firing handheld projectile weapons."> Handgun</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/heavy-weapons/" title="Skill for accurately firing extremely large projectile weapons."> Heavy Weapons (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/autofire/" title="Skill for keeping a weapon's Autofire firing mode on target through recoil."> Autofire (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/archery/" title="Skill for accurately firing bolt- or arrow-launching projectile weapons."> Archery</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/shoulder-arms/" title="Skill for firing shoulder-braced projectile weapons."> Shoulder Arms</a>
+                </td>
+                <td class="center" width="60">
+                    REF
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Social</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/human-perception/" title="Skill of reading a person's facial expressions and body language to discern their emotional state and detect lies or deception."> Human Perception</a>
+                </td>
+                <td class="center" width="60">
+                    EMP
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/interrogation/" title="Skill of forcibly extracting information from people."> Interrogation</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/streetwise/" title="Skill of knowing where to get illegal and contraband things, talking to the criminal element, and avoiding bad situations in bad neighborhoods."> Streetwise</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/personal-grooming/" title="Skill of knowing proper grooming, hair styling, etc., to maximize your physical attractiveness. Use of this Skill allows Characters to increase their chances of successful seduction or persuasion."> Personal Grooming</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/persuasion/" title="Skill of convincing, persuading, or influencing individuals. Also, the ability to talk others into doing what you want. This may be used individually or on large groups."> Persuasion</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/wardrobe-style/" title="Skill of knowing the right clothes to wear, when to wear them, and how to look cool even in a spacesuit."> Wardrobe & Style</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/bribery/" title="Skill of knowing when to bribe someone, how to approach them, and how much to offer."> Bribery</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/trading/" title="Skill of striking a good bargain with a merchant or customer."> Trading</a>
+                </td>
+                <td class="center" width="60">
+                    COOL
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/conversation/" title="Skill of extracting information from people without alerting them through careful conversation."> Conversation</a>
+                </td>
+                <td class="center" width="60">
+                    EMP
+                </td>
+            </tr>
+            
+        
+            
+            <tr class="grouping"><td colspan="2"><strong>Technique</strong></td></tr>
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/cybertech/" title="Skill of identifying, understanding, and repairing cybernetics. The DV and amount of time it takes you to repair a damaged/destroyed item with this Skill to perfect condition is based on the Price Category of the item. (see sidebar on Page 140)."> Cybertech</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/pick-pocket/" title="Skill for picking pockets and shoplifting small items without being noticed."> Pick Pocket</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/photography-film/" title="Skill for producing professional photographs, motion pictures, or braindances."> Photography/Film</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/basic-tech/" title="Skill of identifying, understanding, and repairing simple electronic devices and all other items not covered by another TECH Skill. The DV and amount of time it takes you to repair a damaged/destroyed item with this Skill to perfect condition is based on the Price Category of the item (see sidebar on Page 140)."> Basic Tech</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/demolitions/" title="Skill of setting, defusing, and knowing how much explosive will accomplish a desired result. This Skill allows the Character to be knowledgeable in the use of explosives, as well as knowing the best explosives to use for which jobs and identifying explosive in the field."> Demolitions (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/sea-vehicle-tech/" title="Skill of repairing and maintaining sea vehicles. The DV and amount of time it takes you to repair a damaged/destroyed vehicle with this Skill to perfect condition is based on the amount of damage it has sustained (see sidebar on Page 140)."> Sea Vehicle Tech</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/paramedic/" title="Skill of applying medical treatments to a wounded person to keep them from dying, and treating all Critical Injuries not requiring Surgery. (Surgery is only available to Medtechs through their Role Ability, Medicine.)"> Paramedic (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/paint-draw-sculpt/" title="Skill of producing professional paintings, drawings, or sculpture."> Paint/Draw/Sculpt</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/electronics-security-tech/" title="Skill of identifying, understanding, repairing, countering, and installing complex electronic devices like computers, cyberdecks, personal electronics, electronic security systems, bugs and tracers, pressure plates, laser tripwires, etc. The DV and amount of time it takes you to repair a damaged/destroyed item with this Skill to perfect condition is based on the Price Category of the item (see sidebar on Page 140)."> Electronics/Security Tech (x2)</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/air-vehicle-tech/" title="Skill of repairing and maintaining air vehicles. The DV and amount of time it takes you to repair a damaged/destroyed vehicle with this Skill to perfect condition is based on the amount of damage it has sustained. (see sidebar on Page 140)."> Air Vehicle Tech</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/first-aid/" title="Skill of applying medical treatments to a wounded person to keep them from dying, and treating the most common Critical Injuries."> First Aid</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/forgery/" title="Skill of creating and detecting false documents, works of art, and identification. Forgery is most often opposed by Forgery."> Forgery</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/land-vehicle-tech/" title="Skill of repairing and maintaining vehicles that move on land. The DV and amount of time it takes you to repair a damaged/destroyed vehicle with this Skill to perfect condition is based on the amount of damage it has sustained. (see sidebar on Page 140)."> Land Vehicle Tech</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/weaponstech/" title="Skill for repairing and maintaining weapons of all types. The DV and amount of time it takes you to repair a damaged/destroyed item with this Skill to perfect condition is based on the Price Category of the item: (see sidebar on Page 140)."> Weaponstech</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+            
+            <tr>
+                <td>
+                    <a href="/RED-Repo/skills/pick-lock/" title="Skill for picking non-electronic locks and countering non-electronic security measures."> Pick Lock</a>
+                </td>
+                <td class="center" width="60">
+                    TECH
+                </td>
+            </tr>
+            
+        
+    </tbody>
+</table>
+
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>

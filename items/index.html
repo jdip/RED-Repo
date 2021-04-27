@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>items</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Items</h1>
+<table class="rowshades" width="100%">
+    <thead>
+        <tr>
+            <th width="50%">Name</th>
+            <th>Quality</th>
+            <th>Type</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+            <tr class="grouping"><td colspan="4"><strong>Drug</strong></td></tr>
+            
+            
+                <tr>
+                    <td class="left middle quality_poor"><a href="/RED-Repo/items/alcohol-poor.html">Alcohol</a></td>
+                    <td class="center middle quality_poor">Poor</td>
+                    <td class="center middle">Recreational</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/alcohol-standard.html">Alcohol</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Recreational</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_excellent"><a href="/RED-Repo/items/alcohol-excellent.html">Alcohol</a></td>
+                    <td class="center middle quality_excellent">Excellent</td>
+                    <td class="center middle">Recreational</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/black-lace-standard.html">Black Lace</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/blue-glass-standard.html">Blue Glass</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/boost-standard.html">Boost</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/smash-standard.html">Smash</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/synthcoke-standard.html">Synthcoke</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+        
+            <tr class="grouping"><td colspan="4"><strong>Food</strong></td></tr>
+            
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/canned-goods-standard.html">Canned Goods</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Dry Goods</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/food-stick-standard.html">Food Stick</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Portable</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/frozen-goods-standard.html">Frozen Goods</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Frozen</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/fruits-standard.html">Fruits</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Exotic</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/fruits-standard.html">Fruits</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Fresh</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/grain-bag-standard.html">Grain Bag</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Dry Goods</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/kibble-pack-standard.html">Kibble Pack</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Portable</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/live-chicken-standard.html">Live Chicken</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Animal</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/live-fish-standard.html">Live Fish</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Animal</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/live-pig-standard.html">Live Pig</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Animal</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/mre-standard.html">MRE</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Portable</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/packaged-goods-standard.html">Packaged goods</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Dry Goods</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/prepak-bag-standard.html">Prepak Bag</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Portable</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/vegetables-standard.html">Vegetables</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Root</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/vegetables-standard.html">Vegetables</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Fresh</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/vegetables-standard.html">Vegetables</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Exotic</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+        
+            <tr class="grouping"><td colspan="4"><strong>Gear</strong></td></tr>
+            
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/agent-standard.html">Agent</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/airhypo-standard.html">Airhypo</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/anti-smog-breathing-mask-standard.html">Anti-Smog Breathing Mask</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/audio-recorder-standard.html">Audio Recorder</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/auto-level-dampening-ear-protectors-standard.html">Auto Level Dampening Ear Protectors</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/backup-drive-standard.html">Backup Drive</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Cyberdeck Hardware</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/binoculars-standard.html">Binoculars</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/braindance-viewer-standard.html">Braindance Viewer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/bug-detector-standard.html">Bug Detector</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/carryall-standard.html">Carryall</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/chemical-analyzer-standard.html">Chemical Analyzer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/computer-standard.html">Computer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/cryopump-standard.html">Cryopump</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Medical</td>
+                    <td class="center middle">5000eb<br><small>(Luxury)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/cryotank-standard.html">Cryotank</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Medical</td>
+                    <td class="center middle">5000eb<br><small>(Luxury)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_poor"><a href="/RED-Repo/items/cyberdeck-poor.html">Cyberdeck</a></td>
+                    <td class="center middle quality_poor">Poor</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/cyberdeck-standard.html">Cyberdeck</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_excellent"><a href="/RED-Repo/items/cyberdeck-excellent.html">Cyberdeck</a></td>
+                    <td class="center middle quality_excellent">Excellent</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/dna-lock-standard.html">DNA Lock</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Cyberdeck Hardware</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/disposable-cell-phone-standard.html">Disposable Cell Phone</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/drum-synthesizer-standard.html">Drum Synthesizer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/duct-tape-standard.html">Duct Tape</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/flashlight-standard.html">Flashlight</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/glow-paint-standard.html">Glow Paint</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/glow-stick-standard.html">Glow Stick</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/grapple-gun-standard.html">Grapple Gun</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/guitarinstrument-standard.html">Guitar/Instrument</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/handcuffs-standard.html">Handcuffs</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/hardened-circuitry-standard.html">Hardened Circuitry</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Cyberdeck Hardware</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/homing-tracer-standard.html">Homing Tracer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/inflatable-bed--sleep-bag-standard.html">Inflatable Bed & Sleep-bag</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/insulated-wiring-standard.html">Insulated Wiring</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Cyberdeck Hardware</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/krash-barrier-standard.html">KRASH Barrier</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Cyberdeck Hardware</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/linear-frame--beta-standard.html">Linear Frame ß (Beta)</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Exoskeleton</td>
+                    <td class="center middle">5000eb<br><small>(Luxury)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/linear-frame--sigma-standard.html">Linear Frame Σ (Sigma)</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Exoskeleton</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/lock-picking-set-standard.html">Lock Picking Set</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/medscanner-standard.html">Medscanner</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/medtech-bag-standard.html">Medtech Bag</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/memory-chips-standard.html">Memory Chips</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">10eb<br><small>(Cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/personal-carepak-standard.html">Personal CarePak</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/pocket-amplifier-standard.html">Pocket Amplifier</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/radar-detector-standard.html">Radar Detector</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/radio-communicator-standard.html">Radio Communicator</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/radio-scannermusic-player-standard.html">Radio Scanner/Music Player</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/range-upgrade-standard.html">Range Upgrade</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Cyberdeck Hardware</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/road-flare-standard.html">Road Flare</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">10eb<br><small>(cheap)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/rope-60myds-standard.html">Rope (60m/yds)</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">20eb<br><small>(everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/scramblerdescrambler-standard.html">Scrambler/Descrambler</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/smart-glasses-standard.html">Smart Glasses</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/tech-bag-standard.html">Tech Bag</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/techscanner-standard.html">Techscanner</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/techtool-standard.html">Techtool</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/tent--camping-equipment-standard.html">Tent & Camping Equipment</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Survival</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/video-camera-standard.html">Video Camera</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/virtuality-goggles-standard.html">Virtuality Goggles</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Personal Electronics</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+        
+            <tr class="grouping"><td colspan="4"><strong>Software - Black ICE</strong></td></tr>
+            
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/asp-standard.html">Asp</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/dragon-standard.html">Dragon</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Program</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/giant-standard.html">Giant</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/hellhound-standard.html">Hellhound</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/killer-standard.html">Killer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Program</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/kraken-standard.html">Kraken</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/liche-standard.html">Liche</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/raven-standard.html">Raven</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/sabertooth-standard.html">Sabertooth</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Program</td>
+                    <td class="center middle">1000eb<br><small>(V. Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/scorpion-standard.html">Scorpion</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/skunk-standard.html">Skunk</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">500eb<br><small>(Expensive)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/wisp-standard.html">Wisp</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+        
+            <tr class="grouping"><td colspan="4"><strong>Software - Program</strong></td></tr>
+            
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/armor-standard.html">Armor</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Defender</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/banhammer-standard.html">Banhammer</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Program</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/deckkrash-standard.html">DeckKRASH</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/eraser-standard.html">Eraser</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/flak-standard.html">Flak</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Defender</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/hellbolt-standard.html">Hellbolt</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/nervescrub-standard.html">Nervescrub</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/poison-flatline-standard.html">Poison Flatline</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/see-ya-standard.html">See Ya</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/shield-standard.html">Shield</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Defender</td>
+                    <td class="center middle">20eb<br><small>(Everyday)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/speedy-gonzalvez-standard.html">Speedy Gonzalvez</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/superglue-standard.html">Superglue</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">100eb<br><small>(Premium)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/sword-standard.html">Sword</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Program</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/vrizzbolt-standard.html">Vrizzbolt</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Anti-Personnel</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+                <tr>
+                    <td class="left middle quality_standard"><a href="/RED-Repo/items/worm-standard.html">Worm</a></td>
+                    <td class="center middle quality_standard">Standard</td>
+                    <td class="center middle">Booster</td>
+                    <td class="center middle">50eb<br><small>(Costly)</small></td>
+                </tr>
+            
+        
+    </tbody>
+</table>
+
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>

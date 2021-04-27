@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lifestyle</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Lifestyle</h1>
+<h2>Monthly Expenses</h2>
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Lifestyle</th>
+        <th>What it Entails</th>
+        <th width="110">Monthly Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="center middle"><strong>Kibble</strong></td>
+        <td>
+            You eat horrible food that you might not buy for a dog you liked. Once a month, you can see a movie or
+            braindance.
+        </td>
+        <td class="center middle">100eb</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>Generic Prepak</strong></td>
+        <td>
+            You eat food which tastes much better than kibble, by comparison. Each weekend, you can afford to go out
+            to a good bar and party or have a sit-down meal at a good restaurant.
+        </td>
+        <td class="center middle">300eb</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>Good Prepak</strong></td>
+        <td>
+            Your food is the same quality as most restaurants, and while still artificial it tastes almost exactly the same
+            as real food. You frequent excellent bars and restaurants when you go out. Once a month, you can see a
+            Live Concert or Sporting Event.
+        </td>
+        <td class="center middle">600eb</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>Fresh Food</strong></td>
+        <td>
+            You eat real food. Once per month if you are tired and too far from home, you can get a nearby hotel
+            room and not worry about your budget. You frequent an executive bar. Once a month, you can eat at a
+            world class restaurant.
+        </td>
+        <td class="center middle">1500eb</td>
+    </tr>
+
+    </tbody>
+</table>
+<BR><BR>
+
+<h2>Housing</h2>
+<p>Going without at least 6 hours of sleep a day will
+    give you a -2 to everything you attempt for each day
+    since you've last slept a full 6 hours.</p>
+<p>Sleeping in an uncomfortable situation will leave
+    you fatigued the next day, which will penalize you an
+    additional -2 to everything you attempt while fatigued.
+    This won't kill you, but it doesn't feel good, either.</p>
+
+<p><strong>Being crammed</strong>: sleeping in housing with a
+number of persons greater than 1 + the number
+of bedrooms. Persons unconscious in Cryo-stasis
+and corpses do not count toward this limit. A Cube
+Hotel is the only exception. Sleeping with more
+than one person in a cube is always sleeping
+uncomfortable and will leave you fatigued the
+    next day.</p>
+<p><strong>Sleeping on the street</strong>. Unless you make a
+successful DV15 Endurance Check, sleeping on
+the street will leave you fatigued. Sleeping on the
+    street is also asking for trouble. <strong>Sleeping in a car not equipped for it is slightly safer, but no more comfortable.</strong></p>
+<p><strong>Sleeping in the wilderness</strong>. Unless you make
+a successful DV15 Wilderness Survival Check,
+sleeping in the wilderness will leave you fatigued.
+Unlike sleeping on the street, other persons can
+roll this Wilderness Survival Check for you.
+    Nomad friends are nice to have.</p>
+
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Real Estate</th>
+        <th>Cost to Rent (per month)</th>
+        <th>Cost to Buy</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>Living on the street</strong></td>
+        <td class="na center middle">N/A</td>
+        <td class="na center middle">N/A</td>
+    </tr>
+    <tr>
+        <td><strong>Living on the in a Vehicle</strong></td>
+        <td class="na center middle">N/A</td>
+        <td class="na center middle">N/A</td>
+    </tr>
+    <tr>
+        <td><strong>Cube Hotel</strong></td>
+        <td class="center middle">500eb</td>
+        <td class="na center middle">N/A</td>
+    </tr>
+    <tr>
+        <td><strong>Cargo Container</strong></td>
+        <td class="center middle">1,000eb</td>
+        <td class="center middle">15,000eb</td>
+    </tr>
+    <tr>
+        <td><strong>Studio Apartment</strong></td>
+        <td class="center middle">1,500eb</td>
+        <td class="center middle">25,000eb</td>
+    </tr>
+    <tr>
+        <td><strong>Two-Bedroom Apartment</strong></td>
+        <td class="center middle">2,500eb</td>
+        <td class="center middle">35,000eb</td>
+    </tr>
+    <tr>
+        <td><strong>Corporate Conapt</strong></td>
+        <td class="center middle">Given by a Corp</td>
+        <td class="na center middle">N/A</td>
+    </tr>
+    <tr>
+        <td><strong>Upscale Conapt</strong></td>
+        <td class="center middle">7,500eb</td>
+        <td class="center middle">85,000eb</td>
+    </tr>
+    <tr>
+        <td><strong>Luxury Penthouse</strong></td>
+        <td class="center middle">15,00eb</td>
+        <td class="center middle">150,000eb</td>
+    </tr>
+    <tr>
+        <td><strong>Corporate Beaverville House</strong></td>
+        <td class="center middle">Given by Corp</td>
+        <td class="center middle">200,000eb</td>
+    </tr>
+    <tr>
+        <td><strong>Corporate Beaverville McMansion</strong></td>
+        <td class="center middle">Given by Corp</td>
+        <td class="center middle">500,000eb</td>
+    </tr>
+    </tbody>
+</table>
+
+<BR><BR>
+<h2>Optional Humanity Loss/Gain</h2>
+<p>To encourage players to spend their money on improving their character's lives you can apply the following
+    bonuses/penalties to a character's Humanity depending on their housing, lifestyle, and luxury expenses.</p>
+<p>For every week of game time that goes by, select one adjustment from each category that that best fits the characters
+    life for the week. Roll an Empathy Check (1d10 + EMP) versus the listed DV. If the adjustment is negative succeeding
+    on the check results in no change of humanity, while a failure results in the listed humanity loss. Conversely, if
+    the adjustment is positive succeeding results in gaining the listed humanity and failing results in no change.</p>
+
+<p>Luxury spending can be anything from retail therapy, social events, entertainment, or anything else a character might
+    splurge on in an attempt to make themselves happy.</p>
+<p>Other events can have an impact on Humanity as well, such as failing in a mission or goal, killing a person, losing a loved one, falling in love, or doing a good deed.
+    The amount of humanity gain or loss in such cases is specific to the situation and will be decided by your GM.</p>
+
+<div class="resolution center">
+    <h3>Lifestyle Resolution:</h3>
+    <div>EMP + 1d10</div>
+    <div class="versus">versus</div>
+    <div>Difficulty Value</div>
+</div>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Situation</th>
+        <th>Humanity Adjustment</th>
+        <th>DV</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="grouping">
+        <td colspan="3">Lifestyle</td>
+    </tr>
+    <tr>
+        <td><strong>Kibble</strong></td>
+        <td class="center middle">-2</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Generic Prepak</strong></td>
+        <td class="center middle">-1</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Good Prepak</strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Fresh Food</strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr class="grouping">
+        <td colspan="3">Housing</td>
+    </tr>
+    <tr>
+        <td><strong>Living on the street</strong></td>
+        <td class="center middle">-2</td>
+        <td class="center middle">15</td>
+    </tr>
+    <tr>
+        <td><strong>Living on the street in a Vehicle</strong></td>
+        <td class="center middle">-2</td>
+        <td class="center middle">13</td>
+    </tr>
+    <tr>
+        <td><strong>Cube Hotel</strong></td>
+        <td class="center middle">-2</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Cargo Container</strong></td>
+        <td class="center middle">-1</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Studio Apartment</strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">15</td>
+    </tr>
+    <tr>
+        <td><strong>Two-Bedroom Apartment</strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">13</td>
+    </tr>
+    <tr>
+        <td><strong>Corporate Conapt</strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">11</td>
+    </tr>
+    <tr>
+        <td><strong>Upscale Conapt</strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Luxury Penthouse</strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>Corporate Beaverville House</strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">8</td>
+    </tr>
+    <tr>
+        <td><strong>Corporate Beaverville McMansion</strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">7</td>
+    </tr>
+    </tbody>
+</table>
+<BR><BR>
+
+<h3>Luxury/Charity Spending</h3>
+<p>Spending money during a week on luxury items constitutes "retail therapy" allowing for some humanity gains. The more you spend, the lower the DV for the empathy check to gain humanity, and the higher the reward.</p>
+<p><strong>You can optionally donate to charity to automatically succeed on the empathy check.</strong></p>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Amount Spent</th>
+        <th>Humanity Adjustment</th>
+        <th>DV</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>100eb+</strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td><strong>250eb+</strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">8</td>
+    </tr>
+    <tr>
+        <td><strong>500eb+</strong></td>
+        <td class="center middle">3</td>
+        <td class="center middle">7</td>
+    </tr>
+    <tr>
+        <td><strong>1000eb+</strong></td>
+        <td class="center middle">4</td>
+        <td class="center middle">6</td>
+    </tr>
+    <tr>
+        <td><strong>2500eb+</strong></td>
+        <td class="center middle">5</td>
+        <td class="center middle">5</td>
+    </tr>
+    <tr>
+        <td><strong>5000eb+</strong></td>
+        <td class="center middle">6</td>
+        <td class="center middle">4</td>
+    </tr>
+    </tbody>
+</table>
+<br><br>
+<h3>Drug Addiction</h3>
+<p>Remaining addicted to drugs will slowly sap your humanity. Each week that you do not take steps to treat your addiction roll a <a href="/RED-Repo/skills/resist-torture-drugs">Resist Torture/Drugs</a> check vs the DV on the following table to determine humanity loss.</p>
+<p>You are considered to be "sober" on any day that you didn't take at least one dose of the drug you are addicted to. Make a separate check for each drug addiction.</p>
+<table class="rowshades" width="100%">
+    <thead>
+    <tr>
+        <th>Days Sober</th>
+        <th>Humanity Loss on Fail / Success</th>
+        <th>DV</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="center middle"><strong>0</strong></td>
+        <td class="center middle">-1 / 0</td>
+        <td class="center middle">9</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>1</strong></td>
+        <td class="center middle">-2 / 0</td>
+        <td class="center middle">11</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>2</strong></td>
+        <td class="center middle">-3 / 0</td>
+        <td class="center middle">13</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>3</strong></td>
+        <td class="center middle">-4 / -1</td>
+        <td class="center middle">15</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>4</strong></td>
+        <td class="center middle">-5 / -1</td>
+        <td class="center middle">17</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>5</strong></td>
+        <td class="center middle">-6 / -2</td>
+        <td class="center middle">19</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>6</strong></td>
+        <td class="center middle">-7 / -2</td>
+        <td class="center middle">21</td>
+    </tr>
+    <tr>
+        <td class="center middle"><strong>7</strong></td>
+        <td class="center middle">-8 / -3</td>
+        <td class="center middle">23</td>
+    </tr>
+    </tbody>
+</table>
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>

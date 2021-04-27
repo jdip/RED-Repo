@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Net Combat</title>
+
+<style>
+    @font-face {
+        font-family: 'ITC Eras Bold';
+        src: url('/RED-Repo/assets/fonts/ERASBD.TTF')  format('truetype');
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/RED-Repo/css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script><script type="application/javascript">
+    function hideMenu() {
+        var element = document.getElementById('menu-wrapper');
+        element.classList.add('hide');
+    }
+</script>
+<body onclick="hideMenu();"><header>
+    <script type="application/javascript">
+        function toggleClass(event,id,cls) {
+            var element = document.getElementById(id);
+
+            if (element.classList) {
+                element.classList.toggle(cls);
+            } else {
+                // For IE9
+                var classes = element.className.split(" ");
+                var i = classes.indexOf(cls);
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push(cls);
+                element.className = classes.join(" ");
+            }
+
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            else if(window.event) {
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+    <h1 class="title"><a href="/RED-Repo/">RED Repo</a></h1>
+    <div id="menu-wrapper" class="menu-wrapper hide">
+        <img class="menu" src="/RED-Repo/assets/icons/menu3.svg" alt="menu" width="28" height="28" onclick="toggleClass(event,'menu-wrapper','hide');" />
+        <img id="menu-open" class="menu-open" src="/RED-Repo/assets/icons/arrow-down5.svg" alt="menu" width="22" height="22" />
+        <nav id="header-nav">
+            <div class="nav-group">
+                <h6>General</h6>
+                <a href="/RED-Repo/skills/">Skills</a>
+                <a href="/RED-Repo/actions/">Actions</a>
+                <a href="/RED-Repo/reputation/">Rep</a>
+            </div>
+            <div class="nav-group">
+                <h6>Combat</h6>
+                <a href="/RED-Repo/melee-combat/">Melee</a>
+                <a href="/RED-Repo/ranged-combat/">Ranged</a>
+                <a href="/RED-Repo/trauma/">Trauma</a>
+                <a href="/RED-Repo/health/">Health</a>
+            </div>
+            <div class="nav-group">
+                <h6>Netrunning</h6>
+                <a href="/RED-Repo/interfacing/">Interfacing</a>
+                <a href="/RED-Repo/net-combat/">Combat</a>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+            </div>
+            <div class="nav-group">
+                <h6>Living</h6>
+                <a href="/RED-Repo/hustle/">Hustle</a>
+                <a href="/RED-Repo/lifestyle/">Lifestyle</a>
+                <a href="/RED-Repo/improvement/">Improvement</a>
+            </div>
+            <div class="nav-group">
+                <h6>Shopping</h6>
+                <a href="/RED-Repo/items/">Items</a>
+                <a href="/RED-Repo/armaments/">Armaments</a>
+                <a href="/RED-Repo/cyberware/">Cyberware</a>
+                <a href="/RED-Repo/fashion/">Fashion</a>
+            </div>
+            <div class="nav-group">
+                <h6>Generators</h6>
+                <a href="/RED-Repo/net-architectures/">Architectures</a>
+                <a href="/RED-Repo/night-markets/">Night Markets</a>
+            </div>
+        </nav>
+    </div>
+</header><main class="content">
+    <div class="wrapper">
+        <h1>Net Combat</h1>
+<div class="resolution center">
+    <h3>Net Combat Resolution:</h3>
+    <div>Attacker's Interface + Program ATK + 1d10 <br>or<br> Black ICE ATK + 1d10</div>
+    <div class="versus">versus</div>
+    <div>Target's Interface + 1d10 <br> or <br> Program DEF/Black ICE DEF + 1d10</div>
+    <br><small><em>On a hit the Target suffers the Effect of the Program</em></small>
+</div>
+
+<p>
+    Programs are the tools a Netrunner uses to fight, protect, and explore the electronic realm. Activating or
+    Deactivating a Program is a NET Action. <strong>Each Program loaded on your Cyberdeck can only be
+    Activated once per Meatspace Round.</strong> A Program that is currently Activated (Rezzed) cannot be Activated
+    again until it is Deactivated. Attack programs Deactivate themselves once used.
+</p>
+<p>
+    You can run multiple copies of the same Program on your Cyberdeck if you wish to get around this limitation,
+    and their effects will stack if they are run simultaneously, unless mentioned otherwise.
+</p>
+<p>
+    <strong>Installing or Uninstalling a Program takes an hour.</strong>
+</p>
+<BR><BR>
+<h2>Programs</h2>
+
+
+
+<h3>Anti-Personnel</h3>
+
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>REZ</th>
+        <th>Effect</th>
+        <th width="86">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/deckkrash-standard.html">DeckKRASH</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Enemy Netrunner is forcibly and unsafely Jacked Out of the Architecture, suffering the effect of all Rezzed enemy Black ICE they've encountered in the Architecture as they leave.</td>
+        <td class="center middle">100eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/hellbolt-standard.html">Hellbolt</a></strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Does 2d6 Damage direct to the enemy Netrunner's brain. Unless insulated, their Cyberdeck catches fire along with their clothing. Until they spend a Meat Action to put themselves out, they take 2 damage to their HP whenever they end their Turn. Multiple instances of this effect cannot stack.</td>
+        <td class="center middle">100eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/nervescrub-standard.html">Nervescrub</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Enemy Netrunner's INT, REF, and DEX are each lowered by 1d6 for the next hour (minimum 1). The effects are largely psychosomatic and leave no permanent effects.</td>
+        <td class="center middle">100eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/poison-flatline-standard.html">Poison Flatline</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Destroys a single Non-Black ICE Program installed on the Netrunner target's Cyberdeck at random.</td>
+        <td class="center middle">100eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/superglue-standard.html">Superglue</a></strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Enemy Netrunner cannot progress deeper into the Architecture or Jack Out safely for 1d6 Rounds (enemy Netrunner can still perform an unsafe Jack Out, though). Each copy of this Program can only be used once per Netrun.</td>
+        <td class="center middle">100eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/vrizzbolt-standard.html">Vrizzbolt</a></strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Does 1d6 Damage direct to a Netrunner's brain and lowers the amount of total NET Actions the Netrunner can accomplish on their next Turn by 1 (minimum 2).</td>
+        <td class="center middle">50eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+
+<h3>Anti-Program</h3>
+
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>REZ</th>
+        <th>Effect</th>
+        <th width="86">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/banhammer-standard.html">Banhammer</a></strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Does 3d6 REZ to a Non-Black ICE Program, or 2d6 REZ to a Black ICE Program.</td>
+        <td class="center middle">50eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/sword-standard.html">Sword</a></strong></td>
+        <td class="center middle">1</td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle small">Does 3d6 REZ to a Black ICE Program, or 2d6 REZ to a Non-Black ICE Program.</td>
+        <td class="center middle">50eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+
+<h3>Booster</h3>
+
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>REZ</th>
+        <th>Effect</th>
+        <th width="86">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/eraser-standard.html">Eraser</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Increases all Cloak Checks you make by +2 as long as this Program remains Rezzed.</td>
+        <td class="center middle">20eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/see-ya-standard.html">See Ya</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Increases all Pathfinder Checks you make by +2 as long as this Program remains Rezzed.</td>
+        <td class="center middle">20eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/speedy-gonzalvez-standard.html">Speedy Gonzalvez</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Increases your Speed by +2 as long as this Program remains Rezzed.</td>
+        <td class="center middle">100eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/worm-standard.html">Worm</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Increases all Backdoor Checks you make by +2 as long as this Program remains Rezzed.</td>
+        <td class="center middle">50eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+
+<h3>Defender</h3>
+
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>REZ</th>
+        <th>Effect</th>
+        <th width="86">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/armor-standard.html">Armor</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Lowers all brain damage you would receive by 4, as long as this Program remains Rezzed. Only 1 copy of this Program can be running at a time. Each copy of this Program can only be used once per Netrun.</td>
+        <td class="center middle">50eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/flak-standard.html">Flak</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Reduces the ATK of all Non-Black ICE Attacker Programs run against you to 0 as long as this Program remains Rezzed. Only 1 copy of this Program can be running at a time. Each copy of this Program can only be used once per Netrun.</td>
+        <td class="center middle">50eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    <tr >
+        <td class="center middle"><strong><a href="/RED-Repo/items/shield-standard.html">Shield</a></strong></td>
+        <td class="center middle">0</td>
+        <td class="center middle">0</td>
+        <td class="center middle">7</td>
+        <td class="center middle small">Stops the first successful Non-Black ICE Program Effect from dealing brain damage. After stopping this damage, the Shield Derezzes itself. Only 1 copy of this Program can be running at a time. Each copy of this Program can only be used once per Netrun.</td>
+        <td class="center middle">20eb<br><small>(Everyday)</small>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+
+
+
+<BR><BR>
+<h2>Black ICE</h2>
+
+
+<h3>Anti-Personnel</h3>
+
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>PER</th>
+        <th>SPD</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>REZ</th>
+        <th>Effect</th>
+        <th width="86">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/asp-standard.html">Asp</a></strong></td>
+        <td class="center middle">4</td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">2</td>
+        <td class="center middle">15</td>
+        <td class="center middle small">Destroys a single Program installed on the enemy Netrunner's Cyberdeck at random.</td>
+        <td class="center middle">100<br><small>(Premium)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/giant-standard.html">Giant</a></strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">2</td>
+        <td class="center middle">8</td>
+        <td class="center middle">4</td>
+        <td class="center middle">25</td>
+        <td class="center middle small">Does 3d6 damage direct to an enemy Netrunner's brain. The Netrunner is forcibly and unsafely Jacked Out of their current Netrun. They suffer the effect of all Rezzed enemy Black ICE they've encountered in the Architecture as they leave, not including the Giant.</td>
+        <td class="center middle">1000<br><small>(V. Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/hellhound-standard.html">Hellhound</a></strong></td>
+        <td class="center middle">6</td>
+        <td class="center middle">6</td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">20</td>
+        <td class="center middle small">Does 2d6 damage direct to the Netrunner's brain. Unless insulated, their Cyberdeck catches fire along with their clothing. Until they spend a Meat Action to put themselves out, they take 2 damage to their HP whenever they end their Turn. Multiple instances of this effect cannot stack.</td>
+        <td class="center middle">500<br><small>(Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/kraken-standard.html">Kraken</a></strong></td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">8</td>
+        <td class="center middle">4</td>
+        <td class="center middle">30</td>
+        <td class="center middle small">Does 3d6 damage direct to an enemy Netrunner's brain. Until the end of the Netrunner's next Turn, the Netrunner cannot progress deeper into the Architecture or Jack Out safely (The Netrunner can still perform an unsafe Jack Out).</td>
+        <td class="center middle">1000<br><small>(V. Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/liche-standard.html">Liche</a></strong></td>
+        <td class="center middle">8</td>
+        <td class="center middle">2</td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">25</td>
+        <td class="center middle small">Enemy Netrunner's INT, REF, and DEX are each lowered by 1d6 for the next hour (minimum 1). The effects are largely psychosomatic and leave no permanent effects.</td>
+        <td class="center middle">500<br><small>(Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/raven-standard.html">Raven</a></strong></td>
+        <td class="center middle">6</td>
+        <td class="center middle">4</td>
+        <td class="center middle">4</td>
+        <td class="center middle">2</td>
+        <td class="center middle">15</td>
+        <td class="center middle small">Derezzes a single Defender Program the enemy Netrunner has Rezzed at random, then deals 1d6 damage direct to the Netrunner's brain.</td>
+        <td class="center middle">50<br><small>(Costly)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/scorpion-standard.html">Scorpion</a></strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">2</td>
+        <td class="center middle">15</td>
+        <td class="center middle small">Enemy Netrunner's MOVE is lowered by 1d6 for the next hour (minimum 1). The effects are largely psychosomatic and leave no permanent effects.</td>
+        <td class="center middle">100<br><small>(Premium)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/skunk-standard.html">Skunk</a></strong></td>
+        <td class="center middle">2</td>
+        <td class="center middle">4</td>
+        <td class="center middle">4</td>
+        <td class="center middle">2</td>
+        <td class="center middle">10</td>
+        <td class="center middle small">Until this Program is Derezzed, an enemy Netrunner hit by this Effect makes all Slide Checks at a -2. Each Skunk Black ICE can only affect a single Netrunner at a time, but the effects of multiple Skunks can stack.</td>
+        <td class="center middle">500<br><small>(Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/wisp-standard.html">Wisp</a></strong></td>
+        <td class="center middle">4</td>
+        <td class="center middle">4</td>
+        <td class="center middle">4</td>
+        <td class="center middle">2</td>
+        <td class="center middle">15</td>
+        <td class="center middle small">Does 1d6 damage direct to the enemy Netrunner's brain and lowers the amount of total NET Actions the Netrunner can accomplish on their next Turn by 1 (minimum 2).</td>
+        <td class="center middle">50<br><small>(Costly)</small>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+
+<h3>Anti-Program</h3>
+
+<table class="rowshades">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>PER</th>
+        <th>SPD</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>REZ</th>
+        <th>Effect</th>
+        <th width="86">Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/dragon-standard.html">Dragon</a></strong></td>
+        <td class="center middle">6</td>
+        <td class="center middle">4</td>
+        <td class="center middle">6</td>
+        <td class="center middle">6</td>
+        <td class="center middle">30</td>
+        <td class="center middle small">Deals 6d6 damage to a Program. If this damage would be enough to Derezz the Program, it is instead Destroyed.</td>
+        <td class="center middle">1000<br><small>(V. Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/killer-standard.html">Killer</a></strong></td>
+        <td class="center middle">4</td>
+        <td class="center middle">8</td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">20</td>
+        <td class="center middle small">Deals 4d6 damage to a Program. If this damage would be enough to Derezz the Program, it is instead Destroyed.</td>
+        <td class="center middle">500<br><small>(Expensive)</small>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="center middle"><strong><a href="/RED-Repo/items/sabertooth-standard.html">Sabertooth</a></strong></td>
+        <td class="center middle">8</td>
+        <td class="center middle">6</td>
+        <td class="center middle">6</td>
+        <td class="center middle">2</td>
+        <td class="center middle">25</td>
+        <td class="center middle small">Deals 6d6 damage to a Program. If this damage would be enough to Derezz the Program, it is instead Destroyed.</td>
+        <td class="center middle">1000<br><small>(V. Expensive)</small>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    </div>
+</main><footer>
+    <div class="links">
+        <ul class="github">
+            <li>
+                <img src="/RED-Repo/assets/icons/github.svg" width="28" height="28">
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo" data-icon="octicon-star" data-size="large" aria-label="Star jdip/RED-Repo on GitHub">Star</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork jdip/RED-Repo on GitHub">Fork</a>
+            </li>
+            <li>
+                <a class="github-button" href="https://github.com/jdip/RED-Repo/archive/master.zip" data-icon="octicon-download" data-size="large" aria-label="Download jdip/RED-Repo on GitHub">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="blurb">
+        <p><a href="/">RED Repo</a> is an interactive GM screen for the table top role playing game <a href="https://rtalsoriangames.com/cyberpunk/">Cyberpunk RED</a>. It is built using <a href="https://jekyllrb.com/">Jekyll</a> for <a href="https://pages.github.com/">Github Pages</a>.</p>
+        <p>Feel free to download or fork your own version to modify as you like. I will accept merge requests into the main repo if I subjectively think they fit the purpose of this site and are high quality. This determination will be based solely on my own imperfect opinion.</p>
+    </div>
+</footer></body>
+
+</html>
